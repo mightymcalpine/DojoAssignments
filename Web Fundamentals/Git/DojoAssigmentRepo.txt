@@ -1,0 +1,108 @@
+Last login: Tue Mar  7 15:04:46 on ttys000
+Lars-Codus:~ martymcalpine$ cd /Users/martymcalpine/Library/Mobile\ Documents/com~apple~CloudDocs/Lars\ Codus/Udemy/Python\ Master/Lectures
+Lars-Codus:Lectures martymcalpine$ cd /Users/martymcalpine/Library/Mobile\ Documents/com\~apple\~CloudDocs/Lars\ Codus/Coding\ Dojo/Dojo\ Assignments 
+Lars-Codus:Dojo Assignments martymcalpine$ git init
+Initialized empty Git repository in /Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Dojo Assignments/.git/
+Lars-Codus:Dojo Assignments martymcalpine$ ls -a
+.			.git			Python
+..			MEAN			Web Foundamentals
+Lars-Codus:Dojo Assignments martymcalpine$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	MEAN/
+	Python/
+	Web Foundamentals/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Lars-Codus:Dojo Assignments martymcalpine$ git add .
+Lars-Codus:Dojo Assignments martymcalpine$ git commit -m "adding MEAN dir, Python dir, and Web Fundamentals dir to local repo"
+[master (root-commit) 2124225] adding MEAN dir, Python dir, and Web Fundamentals dir to local repo
+ 8 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 MEAN/about_mean.txt
+ create mode 100644 Python/about_python.txt
+ create mode 100644 Web Foundamentals/CSS/about_css.txt
+ create mode 100644 Web Foundamentals/Git/about_git.txt
+ create mode 100644 Web Foundamentals/HTML/about_html.txt
+ create mode 100644 Web Foundamentals/HTML/indentation.html
+ create mode 100644 Web Foundamentals/Javascript/about_javascript.txt
+ create mode 100644 Web Foundamentals/about_web_foundamentals.txt
+Lars-Codus:Dojo Assignments martymcalpine$ git log
+commit 21242250f73bb41493dc3b729569080b59f1f722
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:54:09 2017 -0800
+
+    adding MEAN dir, Python dir, and Web Fundamentals dir to local repo
+Lars-Codus:Dojo Assignments martymcalpine$ git remote add origin https://github.com/mightymcalpine/DojoAssignments.git
+Lars-Codus:Dojo Assignments martymcalpine$ git push -u origin master
+Username for 'https://github.com': mightymcalpine
+Password for 'https://mightymcalpine@github.com': 
+Counting objects: 10, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (10/10), 848 bytes | 0 bytes/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To https://github.com/mightymcalpine/DojoAssignments.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Lars-Codus:Dojo Assignments martymcalpine$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Lars-Codus:Dojo Assignments martymcalpine$ touch README.txt
+Lars-Codus:Dojo Assignments martymcalpine$ vim README.txt
+Lars-Codus:Dojo Assignments martymcalpine$ ls
+MEAN			README.txt
+Python			Web Foundamentals
+Lars-Codus:Dojo Assignments martymcalpine$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Lars-Codus:Dojo Assignments martymcalpine$ git add .
+Lars-Codus:Dojo Assignments martymcalpine$ git commit -m "adding a README file"
+[master 5912714] adding a README file
+ 1 file changed, 9 insertions(+)
+ create mode 100644 README.txt
+Lars-Codus:Dojo Assignments martymcalpine$ git log
+commit 591271458e1a6580d25adf7af5dfe46e349497b8
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 16:08:50 2017 -0800
+
+    adding a README file
+
+commit 21242250f73bb41493dc3b729569080b59f1f722
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:54:09 2017 -0800
+
+    adding MEAN dir, Python dir, and Web Fundamentals dir to local repo
+Lars-Codus:Dojo Assignments martymcalpine$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 607 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mightymcalpine/DojoAssignments.git
+   2124225..5912714  master -> master
+Branch master set up to track remote branch master from origin.
+Lars-Codus:Dojo Assignments martymcalpine$ git log
+commit 591271458e1a6580d25adf7af5dfe46e349497b8
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 16:08:50 2017 -0800
+
+    adding a README file
+
+commit 21242250f73bb41493dc3b729569080b59f1f722
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:54:09 2017 -0800
+
+    adding MEAN dir, Python dir, and Web Fundamentals dir to local repo
+Lars-Codus:Dojo Assignments martymcalpine$ 

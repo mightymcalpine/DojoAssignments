@@ -1,0 +1,176 @@
+Last login: Tue Mar  7 14:47:52 on ttys000
+Lars-Codus:~ martymcalpine$ cd /Users/martymcalpine/Library/Mobile\ Documents/com~apple~CloudDocs/Lars\ Codus/Udemy/Python\ Master/Lectures
+Lars-Codus:Lectures martymcalpine$ cd ~/Desktop
+Lars-Codus:Desktop martymcalpine$ mkdir gittest
+Lars-Codus:Desktop martymcalpine$ cd gittest
+Lars-Codus:gittest martymcalpine$ git init
+Initialized empty Git repository in /Users/martymcalpine/Desktop/gittest/.git/
+Lars-Codus:gittest martymcalpine$ ls -a
+.	..	.git
+Lars-Codus:gittest martymcalpine$ touch index.html
+Lars-Codus:gittest martymcalpine$ touch styles.css
+Lars-Codus:gittest martymcalpine$ touch aboutMe.txt
+Lars-Codus:gittest martymcalpine$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	aboutMe.txt
+	index.html
+	styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Lars-Codus:gittest martymcalpine$ git add .
+Lars-Codus:gittest martymcalpine$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   aboutMe.txt
+	new file:   index.html
+	new file:   styles.css
+
+Lars-Codus:gittest martymcalpine$ git commit -m "adding index.html, styles.css, and aboutMe.txt"
+[master (root-commit) e9139e8] adding index.html, styles.css, and aboutMe.txt
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aboutMe.txt
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Lars-Codus:gittest martymcalpine$ git log
+commit e9139e8ba619a8bdcb08acbc2c5df8ac00e6b579
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:06:50 2017 -0800
+
+    adding index.html, styles.css, and aboutMe.txt
+Lars-Codus:gittest martymcalpine$ git status
+On branch master
+nothing to commit, working tree clean
+Lars-Codus:gittest martymcalpine$ ls
+aboutMe.txt	index.html	styles.css
+Lars-Codus:gittest martymcalpine$ vim aboutMe.txt
+Lars-Codus:gittest martymcalpine$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   aboutMe.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Lars-Codus:gittest martymcalpine$ git add .
+Lars-Codus:gittest martymcalpine$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   aboutMe.txt
+
+Lars-Codus:gittest martymcalpine$ git commit -m "updated aboutMe"
+[master 775ba87] updated aboutMe
+ 1 file changed, 5 insertions(+)
+Lars-Codus:gittest martymcalpine$ git log
+commit 775ba87d84ea6b4dcd0a60ff92a0c99bd4b9b4c5
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:10:07 2017 -0800
+
+    updated aboutMe
+
+commit e9139e8ba619a8bdcb08acbc2c5df8ac00e6b579
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:06:50 2017 -0800
+
+    adding index.html, styles.css, and aboutMe.txt
+Lars-Codus:gittest martymcalpine$ vim aboutMe.txt
+Lars-Codus:gittest martymcalpine$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   aboutMe.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Lars-Codus:gittest martymcalpine$ git add .
+Lars-Codus:gittest martymcalpine$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   aboutMe.txt
+
+Lars-Codus:gittest martymcalpine$ git commit -m "added favorite movie to aboutMe"
+[master 3f981d1] added favorite movie to aboutMe
+ 1 file changed, 2 insertions(+)
+Lars-Codus:gittest martymcalpine$ git log
+commit 3f981d1f0e9aa49aff8049bbb85a53ef952a51d3
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:12:32 2017 -0800
+
+    added favorite movie to aboutMe
+
+commit 775ba87d84ea6b4dcd0a60ff92a0c99bd4b9b4c5
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:10:07 2017 -0800
+
+    updated aboutMe
+
+commit e9139e8ba619a8bdcb08acbc2c5df8ac00e6b579
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:06:50 2017 -0800
+
+    adding index.html, styles.css, and aboutMe.txt
+Lars-Codus:gittest martymcalpine$ git revert -n 3f981d1
+Lars-Codus:gittest martymcalpine$ git status
+On branch master
+You are currently reverting commit 3f981d1.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   aboutMe.txt
+
+Lars-Codus:gittest martymcalpine$ vim aboutMe.txt
+Lars-Codus:gittest martymcalpine$ git commit -m "removed favorite movie from aboutMe"
+[master ccaf1a0] removed favorite movie from aboutMe
+ 1 file changed, 2 deletions(-)
+Lars-Codus:gittest martymcalpine$ vim aboutMe.txt
+Lars-Codus:gittest martymcalpine$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   aboutMe.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Lars-Codus:gittest martymcalpine$ git add .
+Lars-Codus:gittest martymcalpine$ git commit -m "added favorit book to aboutMe"
+[master 381a37c] added favorit book to aboutMe
+ 1 file changed, 2 insertions(+)
+Lars-Codus:gittest martymcalpine$ git log -3
+commit 381a37cff9518e8e895be5f944609da9505a96c1
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:18:37 2017 -0800
+
+    added favorit book to aboutMe
+
+commit ccaf1a0121da44861d05764be372e05e5a1f5e2b
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:16:09 2017 -0800
+
+    removed favorite movie from aboutMe
+
+commit 3f981d1f0e9aa49aff8049bbb85a53ef952a51d3
+Author: MartyMcAlpine <larscodus@gmail.com>
+Date:   Tue Mar 7 15:12:32 2017 -0800
+
+    added favorite movie to aboutMe
+Lars-Codus:gittest martymcalpine$ 
