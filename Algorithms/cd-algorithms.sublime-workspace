@@ -1,0 +1,927 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"las",
+				"last_name"
+			],
+			[
+				"fir",
+				"first_name"
+			],
+			[
+				"fi",
+				"first_name"
+			],
+			[
+				"t",
+				"text"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"th",
+				"thead\tTag"
+			],
+			[
+				"fah",
+				"fahrenheitCelsiusEquate"
+			],
+			[
+				"gre",
+				"greaterThanSecond"
+			],
+			[
+				"arr",
+				"arrBool"
+			],
+			[
+				"ar",
+				"arg1"
+			],
+			[
+				"for",
+				"for\tfor (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"lun",
+				"lunch"
+			],
+			[
+				"lea",
+				"learYear"
+			],
+			[
+				"my",
+				"myNum"
+			],
+			[
+				"m",
+				"myName"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"bor",
+				"border-left"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"font-",
+				"font-kerning"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"SPO",
+				"spot_available\tfunction"
+			],
+			[
+				"sp",
+				"spot_available\tfunction"
+			],
+			[
+				"play",
+				"player_two_marker\tstatement"
+			],
+			[
+				"boar",
+				"board\tstatement"
+			],
+			[
+				"dis",
+				"display_board\tfunction"
+			],
+			[
+				"leap",
+				"leapYear"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"myn",
+				"myName"
+			],
+			[
+				"n",
+				"myNum"
+			],
+			[
+				"boa",
+				"board\tstatement"
+			],
+			[
+				"PRIN",
+				"print_board\tfunction"
+			],
+			[
+				"x",
+				"X\tparam"
+			],
+			[
+				"player",
+				"player_one_marker\tstatement"
+			],
+			[
+				"roun",
+				"round1\tfunction"
+			],
+			[
+				"pla",
+				"player_one_marker\tstatement"
+			],
+			[
+				"ra",
+				"raw_input\tfunction"
+			],
+			[
+				"bo",
+				"board_position\tstatement"
+			],
+			[
+				"pal",
+				"player_one_marker\tstatement"
+			],
+			[
+				"prin",
+				"print_board\tfunction"
+			],
+			[
+				"playe",
+				"player_two\tstatement"
+			],
+			[
+				"player_",
+				"player_two"
+			],
+			[
+				"acc",
+				"accept_invite"
+			],
+			[
+				"chal",
+				"challenge_accepted\tstatement"
+			],
+			[
+				"image",
+				"image1"
+			],
+			[
+				"co",
+				"col-sm-12"
+			],
+			[
+				"cho",
+				"choose_x_or_o\tstatement"
+			],
+			[
+				"ro",
+				"row1\tstatement"
+			],
+			[
+				"st",
+				"str\tclass"
+			],
+			[
+				"row",
+				"row3\tstatement"
+			],
+			[
+				"lo",
+				"lower"
+			],
+			[
+				"str",
+				"str1\tparam"
+			],
+			[
+				"al",
+				"alphaset\tstatement"
+			],
+			[
+				"uni",
+				"unique_list1\tfunction"
+			],
+			[
+				"ran",
+				"ran_bool\tfunction"
+			],
+			[
+				"not",
+				"not_pangram\tstatement"
+			],
+			[
+				"is",
+				"ispangram\tstatement"
+			],
+			[
+				"lowe",
+				"lowercase\tinstance"
+			],
+			[
+				"uniq",
+				"unique_list\tstatement"
+			],
+			[
+				"s",
+				"str\tclass"
+			],
+			[
+				"isal",
+				"isalpha\tfunction"
+			],
+			[
+				"up",
+				"up_low\tfunction"
+			],
+			[
+				"lower",
+				"lower\tstatement"
+			],
+			[
+				"break",
+				"break"
+			],
+			[
+				"col",
+				"col-sm-6"
+			],
+			[
+				"inpu",
+				"input-group"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"img",
+				"img-responsive"
+			],
+			[
+				"drop",
+				"dropdown"
+			],
+			[
+				"dro",
+				"dropdownmenu"
+			],
+			[
+				"list",
+				"list-group-item"
+			],
+			[
+				"fil",
+				"file-upload"
+			],
+			[
+				"print",
+				"print\tkeyword"
+			],
+			[
+				"prim",
+				"prime_num\tfunction"
+			],
+			[
+				"stg",
+				"stg2\tparam"
+			],
+			[
+				"nu",
+				"num2\tparam"
+			],
+			[
+				"lis",
+				"list3\tstatement"
+			],
+			[
+				"li",
+				"list1\tstatement"
+			],
+			[
+				"d",
+				"div_by_3"
+			],
+			[
+				"sta",
+				"start"
+			],
+			[
+				"tex",
+				"text-uppercase"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"ima",
+				"background-image"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"flex",
+				"flex-flow"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"siz",
+				"font-size"
+			],
+			[
+				"pos",
+				"pos-r\tposition: relative;"
+			],
+			[
+				"blo",
+				"inline-block"
+			],
+			[
+				"get",
+				"getMaxOfArray"
+			],
+			[
+				"ma",
+				"findMax"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"h",
+				"h1\tTag"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"he",
+				"header\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/JavaScript.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 313.0,
+		"last_filter": "ss htm",
+		"selected_items":
+		[
+			[
+				"ss htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: mm_html_template"
+			],
+			[
+				"ss html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ss javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss css",
+				"Set Syntax: CSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ss py",
+				"Set Syntax: Python"
+			],
+			[
+				"ss pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"ss java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"ss: html",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"list",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ss: jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"bo",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"box",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"ski",
+				"Select Skin"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Preferences"
+			]
+		],
+		"width": 494.0
+	},
+	"console":
+	{
+		"height": 161.0,
+		"history":
+		[
+			"print x",
+			"print(num)",
+			"print num"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Assignments",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms"
+	],
+	"file_history":
+	[
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Dojo Assignments/Web Foundamentals/HTML/registration form.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Playgrounds/forms.html",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/User/basic_html_boiler",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Assignments/playground.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/fahrenheit to celsius.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Dojo Assignments/Web Foundamentals/HTML/indentation practice 1.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Dojo Assignments/Web Foundamentals/HTML/indentation practice 2.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Dojo Assignments/Web Foundamentals/HTML/indentation practice.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Dojo Assignments/Web Foundamentals/HTML/indentation practive 2.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/celsius to fahrenheit.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/biggie size.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/playground.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/fit first value.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/this length that value.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/values greater than 2nd.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/greater than 2nd general.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 0/what do you know.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/first plus length.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/print and return.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/countdown.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Chapter 1/countdown.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/final countdown.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/flexible countdown.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/countdown by 4s.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/whoa that huge.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/what do you know.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/counting the dojo way.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/multiples of 6.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/print and count.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/print from 2000 to 5280.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/say its your birthday.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/leap year.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/chapter1.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/multiples of 3 but not all.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/Don't worry be happy.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/print -52 to 1066.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Coding Dojo/Algorithms/setting and swapping.js",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/simple blog website/playground.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/simple blog website/style.css",
+		"/Users/martymcalpine/Downloads/12_Blog_Solution/blog.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/simple blog website/style1.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/simple blog website/style0.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/simple blog website/index.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/simple blog website/index120.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/simple blog website/style120.css",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/flexbox.io/flexbox-001.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/flexbox.io/flexbox-003.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/photo gallery website/index110.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/Projects/photo gallery website/index110.html",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/test_doc.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/test_doc2.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/test_script.py",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/Python Fix Imports/python_fiximports.sublime-settings",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/tic_tac_toe_project.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/python-learn/ex11.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/test script.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/test_while_loop.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S5.L34 - while loops.py",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/modal_testing.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/modal_testing.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/index110.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index240.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/S5_into_to_CSS/selectors.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/style110.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index230.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index250.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/S5_into_to_CSS/selectorsExercise.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/assets 110/07_ImageBlog1/imageLinks.html",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/Anaconda/README.md",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S6.L43 - algorithms.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S3.L23 - Tupels.ipynb",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S6.L40.py",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/icon_in_form_field.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index120.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index110.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/css/style250.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index200.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index160.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index210.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index220.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index150.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index130.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index180.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index190.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index170.html",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S6.L41 - lambda expression.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S6.L42 - nested statements and scope.py",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/python algorithms.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S6.L39 - methods.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/test function.py",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/User/JSON (Sublime).sublime-settings",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/js algorithm.js",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S5.L35 - range().py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S5.L36 - list comprehensions.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S5.L37 - Statement exam.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/dogfart.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S5.L32 - if, elif, else, statements.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S5.L32 - if, elif, else, statements.ipynb",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/rebuilding wireframes/wireframe_02.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/css/style140.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index140.html",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/S5.L33 - for loops.py",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/Python-U/Playgrounds/if_elif_else.py",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/codecademy/HTML/cc-html-005.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/css/style130.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/udemy-html:css/starwars-list.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Web Dev Boot Camp/udemy-html:css/CSS-selectors-specificity.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/css/style120.css",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/User/yoda_ipsum.sublime-snippet",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/rebuilding wireframes/style_02.css",
+		"/Users/martymcalpine/Library/Application Support/Sublime Text 3/Packages/User/mm_html_template.sublime-snippet",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Bootstrap/index100.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/CSS layouts/css-flexbox-003.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/CSS layouts/css-flexbox-003.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/wireframe_01.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/wireframe_01.css",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/Python/algorith_L7_C4.py",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/flexbox.io/flexbox-001.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/flexbox.io/flexbox-004.html",
+		"/Users/martymcalpine/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Playgrounds/flexbox.io/flexbox-004.css",
+		"/Users/martymcalpine/Dropbox/LarsCodus-dbx/LearnCode.Academy/html5-001.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"green",
+			"blue",
+			"degrees",
+			"arrNum",
+			"arrBool",
+			"arrStr",
+			"arg1",
+			"// ",
+			"//",
+			" ",
+			"span",
+			"p",
+			"blockquote",
+			"20px",
+			"h1",
+			"h4",
+			"h1",
+			"<p>",
+			"header",
+			"p",
+			"<p>",
+			"p",
+			"div",
+			"article",
+			"600px",
+			"350px",
+			"skyblue",
+			"dashed",
+			"board",
+			"print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])",
+			"1",
+			"( ",
+			"print",
+			"console.log('Birthday!');",
+			"replace",
+			"image1",
+			"div",
+			"header",
+			"metadata",
+			"h6",
+			"15px",
+			"h3",
+			"<u>",
+			"div",
+			"section",
+			"#\n",
+			"' X '",
+			"print 'X' + ' | ' + 'O' + ' | ' 'X'",
+			"'?'",
+			"palidrome",
+			"xs",
+			"3",
+			"p",
+			"section",
+			"blockquote",
+			"ar",
+			"nav",
+			"aside",
+			"header",
+			"h1",
+			"section",
+			"col-lg-1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"col-lg-1 col-xs-4"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 364.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/JavaScript.sublime-build",
+	"project": "CD_algorithms.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Library/Mobile Documents/com~apple~CloudDocs/Lars Codus/Udemy/Python Master/tic tac toe program/tic_tac_toe_py_udemy.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
