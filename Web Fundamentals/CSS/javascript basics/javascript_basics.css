@@ -1,3 +1,7 @@
+* {
+    margin:0px;
+    padding: 0px;
+}
 #wrapper {
 	max-width: 970px;
 	background-color: #21335b;
@@ -9,33 +13,33 @@ header {
 	background-color: #be3f3d;
 	border-radius: 10px;
 	margin: 10px;
-	padding: 1px 0 1px 15px;
+	padding: 15px;
 	color: #c6d5ea;
 }
-aside {
+nav {
 	display: inline-block;
 	width: 20%;
 	background-color: #437b8a;
-	border-radius: 10px;
+	border-radius: 15px;
 	margin: 10px;
 	vertical-align: top;
-	padding: 1px 10px;
+	padding: 17px 5px 17px 15px;
 	color: #c6d5ea;
 }
 main {
 	display: inline-block;
 	width: 70%;
 	background-color: #101721;
-	border-radius: 10px;
+	border-radius: 15px;
 	margin: 10px 5px 5px 5px;
 	color: #c6d5ea;
-	padding: 5px 18px 10px 20px;
+	padding: 22px 15px 22px 20px;
 }
 footer {
 	background-color: #5f6672;
-	border-radius: 10px;
+	border-radius: 15px;
 	margin: 10px;
-	padding: 1px 0 1px 25px;
+	padding: 15px;
 	color: #c6d5ea;
 }
 a {
@@ -46,4 +50,10 @@ span {
 }
 ul {
 	padding-left: 20px;	
+}
+h2 {
+	margin-bottom: 9px;
+}
+main li {
+	margin: 9px 0 9px 0;
 }
