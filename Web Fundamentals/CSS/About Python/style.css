@@ -1,0 +1,92 @@
+* {
+	margin 0;
+	padding 0;
+}
+body {
+	max-width: 970px;
+	margin: 0 auto;
+	position: relative;
+	 /* GUIDELINES */
+	outline: 2px dashed hotpink;
+	height: 100vh;
+}
+header {
+	background-color: #3471a4;
+}
+header a {
+	color: #ffd343;
+	font-family: sans-serif;
+}
+header ul li:nth-of-type(1) {
+	color: #e4e4e4;
+}
+#search-python-org {
+	float: right;
+}
+#display-text-size li {
+	display: inline-block;
+	font-family: sans-serif;
+	
+}
+
+#python-icon {
+	width: 350px;
+	display: inline-block;
+	margin: 20px;
+}
+#search-form {
+	background-color: #444444;
+	padding: 12px 27px 12px 34px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 15px;
+}
+#search-input {
+	padding: 6px 15px;
+	text-align: center;
+	font-size: 13px;
+}
+#go-button {
+	background-color: #1f4664;
+	color: #e4e4e4;
+	padding: 5px 8px;
+	border-radius: 4px;
+	margin: 0 0 0 3px;
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	** HEADER **
+	go button #305073
+	form bg color #444444
+	
+	** NAV BAR **
+	gb color #3471a4
+	link font color #e4e4e4
+	
+	** MAIN **
+	gb color #1e415e
+	gold font #ffd343
+	body font color #e4e4e4
+	
+	* lower section *
+	links font color #89b4d9 (lite blue)
+	
+	** FOOTER **
+	
+	link font color #89b4d9
+*/
