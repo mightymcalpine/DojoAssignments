@@ -5,40 +5,88 @@
 		<meta charset="utf-8">
 		<meta name="About Python" content="The python programming language was established in the early 1990s. Python is a general purpose, high-level, interpreted programming launguage whose design focus emphasizes code readability. Python is a great for new developers and for seasoned programmers.">
 		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
 	</head>
 	<body>
 		<div id="container">
 			<header>			
-				<img id="python-icon" src="assets/python.png" alt="python-icon">
-				
-				<section id="search-python-org">
-					<ul id="display-text-size">
-						<li>Text Size:</li>
+				<img id="python-icon" src="assets/python.png" alt="python-icon">				
+				<div id="header-right">
+					<ul id="list-margins" class="display-text-size">
+						<li class="off-white-font">Text Size:</li>
 						<li><a href="#">Normal</a></li>
 						<li>|</li>
 						<li><a href="#">Large</a></li>
 					</ul>
-					<div>
-						<form id="search-form" action="">						
-							<input id="search-input" name="Search" role="textbox" placeholder="Search"></input>
-							<button id="go-button">GO</button>
-					</div>
-						
-					</form>
-				</section>
-				
+					<form id="search-form">						
+						<input id="search-input" name="Search" placeholder="Search">
+						<button class="off-white-font" id="go-button">GO</button>
+					</form>	
+				</div>				
 			</header>
 			
 			<nav>
-				
+				<ul id="nav-list">
+					<li><a href="#" class="off-white-font">About</a></li>
+					<li><a href="#" class="off-white-font">Downloads</a></li>
+					<li><a href="#" class="off-white-font">Documentation</a></li>
+					<li><a href="#" class="off-white-font">Community</a></li>
+					<li><a href="#" class="off-white-font">News</a></li>
+					<li><a href="#" class="off-white-font">Events</a></li>
+				</ul>
 			</nav>
 			
 			<main>
-				
+		<!-- MAIN upper section  -->
+				<ul id="main-upper-left">
+					<li><a href="#" class="off-white-font">Docs</a></li>
+					<li><a href="#" class="off-white-font">Audio/Visual Talks</a></li>
+					<li><a href="#" class="off-white-font">Beginner's Guide</a></li>
+					<li><a href="#" class="off-white-font">Developer's Guide</a></li>
+					<li><a href="#" class="off-white-font">PEP Index</a></li>
+					<li><a href="#" class="off-white-font">Python Books</a></li>
+					<li><a href="#" class="off-white-font">FAQ</a></li>					
+				</ul>					
+				<article id="main-upper-right">
+					<p class="off-white-font">First appearing in 1991, Python is a general-purpose, high-level, interpreted programming<br>language whose design focus emphasizes code readability. Whether for processing/analyzing<br>data to power many well-known applications, Python is not only a great language for new<br>programmers but also powerful enough for seasoned developers building whatever they can think<br>of.</p>
+					<p>Beautiful is better than ugly;<br>Explicit is better than implicit;<br>Simple is better than complex;<br>Complex is better than complicated;<br>Readability counts;</p>
+					<p id="zen-of-py" class="off-white-font">The Zen of Python</p>
+				</article>
+		<!-- MAIN lower section  -->
+				<section id="main-lower">
+					<article class="main-lower-l-r" id="main-lower-l">
+						<hr id="blue-line-left" class="blue-lines">
+						<h3 class="main-lower-h3">Getting Started</h3>
+						<p id="get-start-p">Python can be easy to pick up whether you're a first time programmer or you're experienced with other languages. The following pages are a useful first step to get on your way writing programs with Python!</p>
+						<ul class="main-lower-ul">
+							<li><a href="#" class="get-start-li main-lower-li">Beginner's Guide, Programmers</a></li>
+							<li><a href="#" class="get-start-li main-lower-li">Beginner's Guide, Non-Programmers</a></li>
+							<li><a href="#" class="get-start-li main-lower-li">Code sample and snippets for<br>Beginners</a></li>
+						</ul>
+					</article>					
+					<article class="main-lower-l-r">
+						<hr id="blue-line-right" class="blue-lines">
+						<h3 class="main-lower-h3">Applications</h3>
+						<p id="applications-p">The <span id="py-index">Python Package Index (PyPI)</span> hosts thousands of third-party modules for Python. Both Python's standard library and the community-<br>contributed modules allow for endless<br>possibilities.</p>
+						<ul class="main-lower-ul">
+							<li><a href="#" class="applications-li main-lower-li">Web and Internet Development</a></li>
+							<li><a href="#" class="applications-li main-lower-li">Database Access</a></li>
+							<li><a href="#" class="applications-li main-lower-li">Desktop GUIs</a></li>
+							<li><a href="#" class="applications-li main-lower-li">Network Programming</a></li>
+							<li><a href="#" class="applications-li main-lower-li">Software and Game Development</a></li>
+						</ul>
+					</article>
+				</section>
 			</main>
 			
 			<footer>
-				
+				<section>
+					<a href="#" class="footer-links">Help and General Contact</a>
+					<a href="#" class="footer-links">Diversity Initiatives</a>
+					<a href="#" class="footer-links">Submit Website Bugs</a>
+					<p>Copyrite &copy;2001-2016</p>
+				</section>	
 			</footer>
 		</div>
 	</body>

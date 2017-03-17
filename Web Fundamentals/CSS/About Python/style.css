@@ -2,91 +2,189 @@
 	margin 0;
 	padding 0;
 }
-body {
+#container {
 	max-width: 970px;
 	margin: 0 auto;
-	position: relative;
-	 /* GUIDELINES */
-	outline: 2px dashed hotpink;
-	height: 100vh;
+	background-color: #305073;
+	font-family: "Source Sans Pro", sans-serif;
 }
-header {
-	background-color: #3471a4;
-}
+/* 		**HEADER styles**		  */
 header a {
 	color: #ffd343;
-	font-family: sans-serif;
 }
-header ul li:nth-of-type(1) {
-	color: #e4e4e4;
-}
-#search-python-org {
-	float: right;
-}
-#display-text-size li {
-	display: inline-block;
-	font-family: sans-serif;
-	
-}
-
 #python-icon {
 	width: 350px;
+	height: auto;
 	display: inline-block;
-	margin: 20px;
+	margin: 10px 20px 20px 20px;
+}
+#header-right {
+	float: right;
+}
+.display-text-size li {
+	display: inline-block;
+	font-size: 14px;
+}
+#list-margins {
+	margin: 12px 0 3px 63px;
+	display: inline-block;
 }
 #search-form {
 	background-color: #444444;
-	padding: 12px 27px 12px 34px;
+	padding: 12px 33px 12px 35px;
 	border-radius: 10px;
-	display: inline-block;
-	margin-right: 15px;
+	margin: 0 20px 0 0;
+	box-shadow: 2.5px 2.5px 4px #111111;
 }
 #search-input {
 	padding: 6px 15px;
 	text-align: center;
 	font-size: 13px;
+	box-shadow: 1.5px 1.5px 3px #111111;
 }
 #go-button {
 	background-color: #1f4664;
-	color: #e4e4e4;
 	padding: 5px 8px;
 	border-radius: 4px;
 	margin: 0 0 0 3px;
 	font-size: 13px;
+	box-shadow: 1.5px 1.5px 3px #111111;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-	** HEADER **
-	go button #305073
-	form bg color #444444
-	
-	** NAV BAR **
-	gb color #3471a4
-	link font color #e4e4e4
-	
-	** MAIN **
-	gb color #1e415e
-	gold font #ffd343
-	body font color #e4e4e4
-	
-	* lower section *
-	links font color #89b4d9 (lite blue)
-	
-	** FOOTER **
-	
-	link font color #89b4d9
-*/
+/* 		**NAV styles**		  */
+#nav-list {		
+	background-color: #3471a4;
+	border-radius: 7px;
+	box-shadow: 2.5px 2.5px 4px #111111;
+	margin: 0 43px 0 75px;
+}
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	font-size: 22px;
+	text-decoration: none;
+	padding: 12px 18px 12px 20px;
+}
+nav ul li a {
+	text-decoration: none;	
+}
+/* 		**MAIN upper styles**		  */
+#main-upper-left {
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+	line-height: 1.8em;
+	margin: 33px 0 0 75px;
+	font-size: 1.1em;
+	list-style: none;
+}
+#main-upper-right {
+	display: inline-block;
+	width: 70%;
+	text-align: center;
+	line-height: 1.25em;
+	margin: 8px 25px 0 0;
+	font-size: 0.88em;
+	float: right;
+	vertical-align: top;
+}
+main p:nth-of-type(1) {
+	margin-bottom: 2px;
+}
+main p:nth-of-type(2) {
+	color: #ffd343;
+	font-size: 1.50em;
+	font-family: 'Hind', sans-serif;
+	line-height: 1.6em;
+	font-style: italic;
+	margin: 0;
+}
+#zen-of-py {
+	font-size: 1.3em;	
+	font-style: none;
+	margin-top: 8px;	
+	margin-bottom: 30px;
+}
+/* 		**MAIN lower styles**		  */
+#main-lower {	
+	background-color: #305073;
+	clear: both;
+	background-color: #fff;
+	border-top: 3px solid #17385F;
+}
+.blue-lines {
+	width: 100%;
+	height: 5px;
+	border-style: none;
+	border-top: 4px solid #89b4d9;
+}
+#blue-line-left {
+	margin: 10px 0 2px 35px;	
+}
+#blue-line-right {
+	width: 108%; 
+	margin: 10px 0 2px 15px;	
+}
+.main-lower-l-r {
+	display: inline-block;
+	width: 40%;
+	font-family: 'Hind', sans-serif;
+	font-size: 0.88em;
+	line-height: 1.25em;
+	text-align: center;
+	margin: 0 0 0 50px;
+}
+#main-lower-l {
+	vertical-align: top;
+}
+.main-lower-ul {
+	list-style: square;
+	display: inline-block;
+	margin: 1px 0 10px 0;
+	padding-left: 30px;
+}
+.main-lower-li {
+	text-decoration: none;
+	color: #89b4d9;
+	line-height: 1.35em;
+}
+#get-start-p {
+	padding: 0 50px;
+	margin-top: 6px;
+}
+.get-start-li {
+	padding-left: 8px;
+}
+#applications-p {
+	padding: 0 40px;
+	margin-top: 6px;
+}
+.applications-li {
+	padding-left: 17px;
+}
+.main-lower-h3 {
+	margin: 3px 0;
+}
+#py-index {
+	color: #89b4d9;
+}
+/* 		**FOOTER styles**		  */
+footer section {
+	padding: 50px 0 0 10px;
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+	color: #89b4d9;
+	background: linear-gradient(#305073, #426fa0);
+	border-top: 1.5px solid #17385F;
+}
+.footer-links {
+	text-decoration: none;
+	color: #89b4d9;
+	padding: 35px;
+}
+footer p {
+	margin-bottom: 1px;
+	font-size: 0.75em;
+}
+.off-white-font {
+	color: #e4e4e4;
+}

@@ -6,9 +6,6 @@ body {
 	max-width: 970px;
 	position: relative;
 	margin: 0 auto;
-	/* GUIDELINES */
-	/*outline: 2px dashed hotpink;*/
-	/*height: 100vh;*/
 }
 header {
 	background-color:#f1f1f1; 
@@ -47,6 +44,7 @@ footer ul li {
 }
 #profile-pic {
 	width: 41%;
+	height: auto;
 	margin: 25px;
 	border: 5px solid #c0c0c0;
 	display: inline-block;
@@ -108,3 +106,10 @@ footer ul li {
 a {
 	color: #000;
 }
+
+
+
+
+
+
+
