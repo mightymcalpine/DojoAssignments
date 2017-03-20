@@ -1,0 +1,32 @@
+Short Answer Questions: Fundamentals
+
+Set of instructions that can be compiled or assembled into an executable computer program.
+
+Computers are only as smart as the programs humans create for them to run.
+
+The purpose of programming languages are to serve as a go-between that is understandable by both computer and human.
+Python, C++, and Javascript are 3 examples of programming languages. There are so many programming languages because software developers want flexibility in writing programs and because different programming languages solve different needs/problems.
+
+A variable is an container in which a developer can temporarily store a value. They are useful because it gives a developer flexibility to store many and various data values and the ability to change those values at will.
+
+A single = sign means to set a value on the right to a variable or object on the left. Whereas a == sign will loosely compare a value to another value after converting each value to a common type.
+
+A == sign will loosely compare a value to another value after converting each value to a common type. Whereas a === will strictly compare two values, no converting to a a common type.
+
+A developer console exists for a developer to check warning and error messages about his/her code, and for testing or debugging outputs of certain types of code.
+
+A conditional statement will test whether a certain bit of code is true or false. A example of this would be an IF statement where a condition is set such as (5 > 3), if that condition evaluates true, then the program will execute a set of code between { }. If the condition evaluates false, the code in the { } will not be run.
+
+FOR and WHILE loops are efficient way for checking a data set/structure repeatedly based on defined parameters and conditions.
+
+A FOR loop is useful for evaluating a data set a set or known number of times. A WHILE loop is useful for evaluating a data set an unknown amount of times or as long as a condition is true.
+
+A function is a an object where a developer can define a set of instructions/code to perform a task. This function can take inputs (parameters) and output (return) values. A function gives the developer the ability to call or return the code of a function at different times and places in their program.
+
+A function can return one value. Though that one value could be an a data structure of some kind with multiple value contained therein. I understand that general clean code guidelines will limit a function to 4 or less input parameters, though it is possible for a function to handle more that 4.
+
+A array is a data structure that holds a number of values and values of varying data types. I the believe theoretical limit of array values based on ECMA5 is approximately 4.29 billion elements.Though possible, this number seems unreasonable for practical use.
+
+A T-diagram is a tool a developer can use to keep track of variables and their values as one works through an algorithm or program. Generally a T-diagram is helpful for doing just that, namely keeping track of variables and values.
+
+The two ways to comment in Javascript are a // for a single line of comment and /* and */ for multiple lines of comment.
