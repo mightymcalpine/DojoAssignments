@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kitten to Maul</title>
+		<meta charset="utf-8">
+		<meta name="Kitten to Maul" content="Assignment for coding dojo bootcamp. This Assignment involves html, css, javascript, and jquery. You will see a kitten and a darth sith warrrior">
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('img').click(function(){
+					var temp = $(this).attr('src');					
+					$(this).attr('src', $(this).attr('alt-img-src'));
+					$(this).attr('alt-img-src', temp);							
+				});
+			});			
+		</script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<h1>Kitten to...Maul?</h1>
+			<main>
+				<div>
+					<img src="cat0.png" alt-img-src="maul0.png" class="images" alt="kitten">
+					<img src="cat1.png" alt-img-src="maul1.png" class="images" alt="kitten">
+					<img src="cat2.png" alt-img-src="maul2.png" class="images" alt="kitten">
+					<img src="cat3.png" alt-img-src="maul3.png" class="images" alt="kitten">
+					<img src="cat4.png" alt-img-src="maul4.png" class="images" alt="kitten">
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

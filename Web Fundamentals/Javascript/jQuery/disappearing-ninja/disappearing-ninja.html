@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Star Wars Tiles</title>
+		<meta charset="utf-8">
+		<meta name="jQuery Assignment" content="This webpage is an assignment for the coding dojo bootcamp. This page will display and hide fun lego star wars characters.">
+		<link rel="stylesheet" href="dis-ninja-styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Coustard:900" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$('.tile-container').click(function(){
+					$(this).hide();
+				});
+			});			
+		</script>	
+	</head>
+	
+	<body>
+		<header>
+			<h1>Star Wars Tiles</h1>
+			<form id="restore-form">
+				<button id="restore-btn">Restore</button>
+			</form>
+		</header>
+		
+		<main>
+			<h2>The Sith</h2>
+			<article class="tile-container first-row-container" id="darth-sidious">			
+				<img src="darth-sidious-profile.png" class="img-position" alt="darth-sidious">
+				<h3>Darth Sidious</h3>
+			</article>			
+			
+			<article class="tile-container" id="darth-vader">
+				<img src="darth-vader-profile.jpg" class="img-position" alt="darth-vader">
+				<h3>Darth Vader</h3>
+			</article>
+			
+			<article class="tile-container" id="kylo-ren">
+				<img src="kylo-ren-profile.jpg" class="img-position" alt="kylo ren">
+				<h3>Kylo Ren</h3>
+			</article>
+			
+			<article class="tile-container" id="darth-maul">
+				<img src="darth-maul-profile.jpeg" class="img-position" alt="darth-maul">
+				<h3>Darth Maul</h3>
+			</article>
+			
+			<h2>The Jedi</h2>
+			<article class="tile-container first-row-container" id="yoda">
+				<img src="yoda.png" class="img-position" alt="yoda">
+				<h3>Master Yoda</h3>
+			</article>
+			
+			<article class="tile-container" id="mace">
+				<img src="mace-profile.jpg" class="img-position" alt="mace">
+				<h3>Mace Windu</h3>
+			</article>
+			
+			<article class="tile-container" id="luke">
+				<img src="luke-profile.jpg" class="img-position" alt="luke">
+				<h3>Luke Skywalker</h3>
+			</article>
+			
+			<article class="tile-container" id="obi-wan">
+				<img src="obi-wan-profile.jpg" class="img-position" alt="obi-wan">
+				<h3>Obi-Wan Kenobi</h3>
+			</article>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+#wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+}
+h1 {
+	color: #FF1493;
+	text-align: center;
+	font-size: 3em;
+	margin: 35px;
+}
+p {
+	font-size: 0.8em;
+	text-align: center;
+	padding: 0 80px;
+	margin-bottom: 15px;
+}
+h2 {	
+	margin: 25px auto;
+	font-size: 2em;
+	display: inline-block;
+	position: relative;
+	left: 65px;
+	vertical-align: middle;
+}
+h2 a {
+	text-decoration: none;
+	color: #0080FF;
+}
+.function-container {
+	width: 500px;
+	height: auto;
+	margin: 15px auto;
+	border-bottom: 2px solid #CCCCCC;
+	border-top: 0.25px solid #DDDDDD;
+	border-left: 0.25px solid #DDDDDD;	
+	border-right: 2px solid #CCCCCC;	
+	box-shadow: 2px 2px 1px #B2B2B2;	
+}
+.button-style {
+	border-radius: 10px;
+	border: none;	
+	padding: 8px 15px;	
+	margin: 10px 35px;
+	color: #fcfcfc;
+	box-shadow: 1px 2px 1px #4C4C4C;	
+	vertical-align: middle;
+}
+#click-btn {
+	background: linear-gradient(to bottom right, #F1948A, #C0392B);
+}
+#hide-btn {
+	background: linear-gradient(to bottom right, #BB8FCE, #9B59B6);
+}
+#show-btn {
+	background: linear-gradient(to bottom right,#85C1E9, #2980B9);	
+}
+#toggle-btn {
+	background: linear-gradient(to bottom right, #76D7C4, #3498DB);	
+}
+#slideDown-btn {
+	background: linear-gradient(to bottom right, #73C6B6, #1ABC9C);	
+}
+#slideUp-btn {
+	background: linear-gradient(to bottom right, #7DCEA0, #16A085);	
+}
+#slideToggle-btn {
+	background: linear-gradient(to bottom right, #82E0AA, #27AE60);	
+}
+#fadeIn-btn {
+	background: linear-gradient(to bottom right, #F8C471, #F1C40F);	
+}
+#fadeOut-btn {
+	background: linear-gradient(to bottom right, #F7DC6F, #2ECC71);	
+}
+#addClass-btn {
+	background: linear-gradient(to bottom right, #F0B27A, #F39C12);	
+}
+#before-btn {
+	background: linear-gradient(to bottom right, #E59866, #E67E22);	
+}
+#after-btn {
+	background: linear-gradient(to bottom right, #F4F6F7, #D35400);	
+}
+#append-btn {
+	background: linear-gradient(to bottom right, #D7DBDD, #ECF0F1);	
+}
+#html-btn {
+	background: linear-gradient(to bottom right, #BFC9CA, #BDC3C7);	
+}
+#attr-btn {
+	background: linear-gradient(to bottom right, #B2BABB, #95A5A6);	
+}
+#val-btn {
+	background: linear-gradient(to bottom right, #85929E, #7F8C8D);	
+}
+#text-btn {
+	background: linear-gradient(to bottom right, #808B96, #34495E);	
+}
+#data-btn {
+	background: linear-gradient(to bottom right, #ABB2B9, #2C3E50);	
+}
+.enlarge-heading {
+	font-size: 4em;
+	font-weight: 900;
+	left: 15px;	
+}
+.skywalker-heading {
+	font-size: 4em;
+	font-weight: 900;
+	left: 45px;
+	color: #FF1493;
+}
+.skywalker-heading-2 {
+	font-size: 4em;
+	font-weight: 900;
+	left: 5px;
+	color: #FF1493;
+}
+.val-form {
+	text-align: center;
+	margin: 15px 0;
+}

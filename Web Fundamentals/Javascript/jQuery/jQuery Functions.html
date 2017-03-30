@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>jQuery Functions</title>
+		<meta charset="utf-8">
+		<meta name="jQuery Functions" content="Assignment for Coding Dojo exploring and working with the core functions within the jQuery library.">
+		<link rel="stylesheet" href="jq-func-styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+				<!-- jQuery Action -->
+		<script>
+			$(document).ready(function(){
+				$('h1').on('hover', function(){
+					$('h1').css('color', '#FF1493');
+				});
+				$('#click-btn').click(function(){
+					$('#click-text').toggle();
+				})
+				$('#hide-btn').click(function(){
+					$('#hide-text').hide();
+					$('#show-text').hide();
+					$('#slideDown-text').hide();
+				});
+				$('#show-btn').click(function(){
+					$('#hide-text').show();
+					$('#show-text').show();
+				});
+				$('#toggle-btn').click(function(){
+					$('#toggle-text').toggle();
+					$('#click-text').toggle();
+				});
+
+				$('#slideUp-btn').click(function(){
+					$('#slideUp-text').slideUp('fast');
+					$('#slideDown-text').slideUp('fast');
+				});
+				
+				$('#slideDown-btn').click(function(){
+					$('#slideDown-text').slideDown('slow');
+					$('#slideUp-text').slideDown('slow');
+				});
+				
+				$('#slideToggle-btn').click(function(){
+					$('#slideToggle-text').slideToggle('fast');
+				});
+				
+				$('#fadeOut-btn').click(function(){
+					$('#fadeOut-container').fadeOut('700');					
+				});
+				
+				$('#fadeIn-btn').click(function(){					
+					$('#fadeOut-container').fadeIn('fast');
+				});
+
+				$('#addClass-btn').click(function(){
+					$('#addClass-heading').addClass('enlarge-heading');
+				});
+				$('#addClass-text').click(function(){
+					$('#addClass-heading').removeClass('enlarge-heading');
+				});
+				$('#before-btn').click(function(){
+					$('#before-text').before('<h2 class="skywalker-heading">** Skywalker **</h2>');
+				});
+				$('#after-btn').click(function(){
+					$('#after-text').after('<h2 class="skywalker-heading">** Skywalker **</h2>');
+					$('#after-text').hover(function(){
+						$('.skywalker-heading').fadeOut('slow');						
+					});
+				});
+				$('#append-btn').click(function(){
+					$('#append-text').append(' I could also append a new header element');
+					$('#append-text').append('<h3>Darth Vader is a dark lord of the Sith</h3>')
+				});				
+				$('#html-btn').click(function(){
+					$('#html-text').html('<h2 class="skywalker-heading-2">** Skywalker **</h2>');
+				});
+				$('#html-link').hover(function(){
+					$('.skywalker-heading-2').html(function(){
+						var numOfHeaders = $('h2').length;
+						return "<p>There are " + numOfHeaders + " headers on this page</p>";
+					})
+				})
+				$('#attr-btn').click(function(){
+					var attrValue = $('#attr-text').attr('type');
+					$('#attr-text').append('<em>' + attrValue + '</em>');
+				});
+				$('#val-btn').click(function(){
+					var inputValue = $('input').val();
+					if (inputValue === '') {
+						$('#val-text').after('<h4 class="val-form">No value given :(</h4>');
+					}
+					else{
+						$('#val-text').after('<h4 class="val-form">The value is ' + inputValue + '</h4>');
+					};
+				});
+				$('#text-btn').click(function(){
+					var h1Text = $("h1").text();
+					$('#text-text').after('<p>' + h1Text + '</p>');
+				})
+				$('body').data('Darth Bane', 56);
+				$('body').data('Skywalker', ['Anakin', 'Padme', 'Luke', 'Leia']);
+				$('#data-btn').click(function(){
+					alert($('body').data('Skywalker'));
+				});
+					
+			});			
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Exploring Some Common jQuery Functions</h1>
+		
+			<article class="function-container">
+				<button class="button-style" id="click-btn">Click</button>
+				<h2><a href="http://api.jquery.com/click/">.click</a></h2>
+				<p id="click-text">Click the button on the left to restore the this text. Huh? Click the toggle button below to make it go away first</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="hide-btn">Hide</button>
+				<h2><a href="http://api.jquery.com/hide/">.hide</a></h2>
+				<p id="hide-text">Click the Hide button to hide this text, and the text in .show just below</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="show-btn">Show</button>
+				<h2><a href="http://api.jquery.com/show/">.show</a></h2>
+				<p id="show-text">Click the Show button to reveal the text here and in .hide just above</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="toggle-btn">Toggle</button>
+				<h2><a href="http://api.jquery.com/toggle/">.toggle</a></h2>
+				<p id="toggle-text">Click the Toggle button to toggle the visability of this text and the text in the click box above</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="slideUp-btn">SlideUp</button>
+				<h2><a href="http://api.jquery.com/slideUp/">.slideUp</a></h2>
+				<p id="slideUp-text">Click the button on the left to make this text and the text in the SlideDown box above go away</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="slideDown-btn">SlideDown</button>
+				<h2><a href="http://api.jquery.com/slideDown/">.slideDown</a></h2>				
+				<p id="slideDown-text">Click the SlideDown button to reveal the text here and in the .slideUp box below</p>				
+			</article>
+		
+			<article class="function-container">
+				<button class="button-style" id="slideToggle-btn">SlideToggle</button>
+				<h2><a href="http://api.jquery.com/slideToggle/">.slideToggle</a></h2>
+				<p id="slideToggle-text">Click the button on the left to animate the disappearing of this text</p>
+			</article>
+			
+			<article class="function-container" id="fadeOut-container">
+				<button class="button-style" id="fadeOut-btn">FadeOut</button>
+				<h2><a href="http://api.jquery.com/fadeOut/">.fadeOut</a></h2>
+				<p>Click the button on the left to say goodbye to this box.</p>
+			</article>
+			
+			<article class="function-container" id="fadeIn-container">
+				<button class="button-style" id="fadeIn-btn">FadeIn</button>
+				<h2><a href="http://api.jquery.com/fadeIn/">.fadeIn</a></h2>
+				<p>Click the button on the left to bring back the fadeOut box below after you send it away</p>
+			</article>
+
+			<article class="function-container">
+				<button class="button-style" id="addClass-btn">AddClass</button>
+				<h2 id="addClass-heading"><a href="http://api.jquery.com/addClass/">.addClass</a></h2>
+				<p id="addClass-text">Click the button on the left to make the heading in this box jumbo size, click this text to restore it to its original size</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="before-btn">Before</button>
+				<h2><a href="http://api.jquery.com/before/">.before</a></h2>
+				<p id="before-text">Click the button on the left to insert a new element before (above) this text. To remove the new element, you'll have to read about .after in the next box (just below)</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="after-btn">After</button>
+				<h2><a href="http://api.jquery.com/after/">.after</a></h2>
+				<p id="after-text">Click the button on the left to add an addition element after this text, then just hover the cursor over this text to remove the addition elements here and in the before box just above</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="append-btn">Append</button>
+				<h2><a href="http://api.jquery.com/append/">.append</a></h2>
+				<p id="append-text">Click the button on the left to add an element at the end of this text,</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="html-btn">HTML</button>
+				<h2><a href="http://api.jquery.com/html/" id="html-link">.html</a></h2>
+				<p id="html-text">When you click the button on the left, we'll change the HTML content here to someting completely different. Hover over .html to change it again</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="attr-btn">Attr</button>
+				<h2><a href="http://api.jquery.com/attr/">.attr</a></h2>
+				<p id="attr-text" type="text">Click the button on the left to find out what this paragraph is made of: </p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="val-btn">Val</button>
+				<h2><a href="http://api.jquery.com/val/">.val</a></h2>
+				<p id="val-text">Let's find out the value of the input field below. Type in your favorite color, then click the Val button on the left</p>
+				<form class="val-form">
+					<input type="text" placeholder="favorite color">
+				</form>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="text-btn">Text</button>
+				<h2><a href="http://api.jquery.com/text/">.text</a></h2>
+				<p id="text-text">click the button on the left to retrieve the text from title of this webpage</p>
+			</article>
+			
+			<article class="function-container">
+				<button class="button-style" id="data-btn">Data</button>
+				<h2><a href="http://api.jquery.com/data/">.data</a></h2>
+				<p>Click the button on the left to get a message about people with the last name Skywalker</p>
+			</article>
+		
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
