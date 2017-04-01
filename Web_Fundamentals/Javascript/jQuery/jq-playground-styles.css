@@ -1,0 +1,21 @@
+h1 {
+	color: hotpink;
+}
+.btn-style {
+	border-radius: 10px;
+	border-style: none;
+	color: #fefefe;
+	background-color: #0080FF;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.5em;
+}
+.new-btn {
+	border-radius: 10px;
+	border-style: none;
+	color: #fefefe;
+	background-color: #FF0000;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.5em;
+}

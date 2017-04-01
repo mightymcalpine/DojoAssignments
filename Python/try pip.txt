@@ -1,0 +1,17 @@
+Try Pip assignment
+
+1. Pip is a package manager for Python frameworks, libraries, packages - I used pip to install Django, there was a install status bar during the process, when completed it stated I have Django-1.10.6
+
+2. Pip list displays a list of all current packages on my machine, there are dozens
+
+3. Requirement already satisfied - then a path to its location within site-packages
+
+4. Pip list is just a list of installed packages, pip freeze is an output of packages in requirement format, this output can be written to a .txt file so that you can then use those packages in a virtualenv
+
+5. There is not a requirements.txt file on the desktop that contains a list of all pip packages in requirements format
+
+6. Successfully uninstalled Django
+
+7. No output because Django does not exist on my machine, verified by pip list
+
+8. Incredibly long list of Flask elements

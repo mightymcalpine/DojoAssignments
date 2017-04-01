@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>jQuery Forms</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="#">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){				
+				// alert('Hello!');
+				// test your jquery
+				$('form').submit(function(){
+					// return false
+					// when a form is submitted, run this function, return false stops the form data 
+					// from being sent to whatever's in your action attribute of your form tag
+					// blocks form data from submitting, stops page refresh
+					alert('you are making a submission!');
+					console.log($(this).serialize());
+					// serial function takes all the data from *this *form and compresses it into
+					// an array of sorts for the backend to read
+					// merely viewing the return value in the console
+					return false
+				});
+				$('#form1').submit(function(){});
+				// the .submit handler is attached to the element with an ID of form1
+				
+				$('.btn').click(function(){
+					$('#form1').submit();
+				});
+				// our button has nothing to do with our form, but we've tied the button to the form
+				// with jquery, when the button is clicked, the element with the id of form1 will be 
+				// submitted
+				
+				
+			});			
+		</script>
+	</head>
+	<body>
+		
+		<h1>Hello World!</h1>
+		
+		<form id="form1" action="process.php" method="post">
+		<!-- action attribute is where the form data is being sent -->
+			first name <input type="text" name="first_name">
+			last name<input type="text" name="last_name">
+			email<input type="text" name="email">
+			<input type="submit" value="submit!">			
+		</form>
+		<button class="btn">Click me to use .submit differently</button>
+		
+	</body>
+</html>
