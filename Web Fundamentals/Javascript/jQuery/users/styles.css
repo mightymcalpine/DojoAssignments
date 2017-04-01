@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Droid Serif', serif;
+}
+#wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+table {
+	border-style: collapse;
+	border: 2px solid #006AD2;
+	margin-top: 10px;
+}
+.cell-align {
+	padding: 7px 30px 7px 10px;
+	text-align: left;
+}
+form {
+	border-top: 2.5px solid #006AD2;
+	display: inline-block;
+	width: 335px;
+	padding-top: 10px;
+}
+h1 {	
+	color: #EC7809;
+	font-size: 2em;
+	margin: 25px 15px 5px 0;
+}
+.input-align {
+	margin: 10px 0;
+	position: relative;
+}
+#firstname {
+	left: 113px;
+}
+#lastname {	
+	left: 116px;
+}
+#emailaddress {
+	left: 88px;
+}
+#contactnum {
+	left: 127px;
+}
+input {
+	padding: 5px 0 2px 2px;
+	vertical-align: bottom;
+}
+button {
+	position: relative;
+	border-style: none;
+	left: 270px;
+	padding: 8px;
+	border-radius: 10px;
+	color: #fefefe;
+	background-color: #00B000;
+}
