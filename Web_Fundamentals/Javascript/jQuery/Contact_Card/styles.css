@@ -1,0 +1,28 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	display: inline-block;
+}
+#wrapper {
+	width: 800px;
+	margin: 0, auto;
+}
+#leftside {
+	display: inline-block;
+}
+#rightside {
+	display: inline-block;
+	vertical-align: top;	
+}
+.card-style {
+	border: 1px solid #000;
+	width: 200px;
+	height: auto;
+	margin: 0 0 25px 50px;
+	text-align: center;
+}
+#stealth {
+	display: none;
+}
