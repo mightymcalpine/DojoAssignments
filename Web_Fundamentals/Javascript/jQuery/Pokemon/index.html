@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pokemon</title>
+		<meta charset="utf-8">
+		<meta name="Pokemon assignment" content="This website is a project for coding dojo bootcamp. It uses an api to get the images of pokemon characters from a server">
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				console.log('Hello World');
+				for (var img = 1; img < 152; img++) {
+					$('main').append('<img src=http://pokeapi.co/media/img/' + img + '.png>');
+				}
+			});			
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Pokemon Characters</h1>
+				<h2>The Original 151</h2>
+			</header>
+			
+			<main>
+				<img src="http://pokeapi.co/media/img/1.png">
+
+
+				
+			</main>
+		</div>
+	</body>
+</html>

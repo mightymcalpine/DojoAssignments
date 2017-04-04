@@ -1,0 +1,20 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+#wrapper {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+h1 {
+	color: #ED0078;
+	text-align: center;
+	margin: 10px 0;
+	font-size: 3.5em;
+}
+h2 {
+	color: #0070DF;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 25px;
+}
