@@ -9,31 +9,30 @@
 		<script>
 			$(document).ready(function(){
 				console.log('Hello World');
-				for (var img = 1; img < 152; img++) {
-					$('#leftSide').append('<img src=http://pokeapi.co/media/img/' + img + '.png id=' + img + '>');
-				}
-				
-				$.get('http://pokeapi.co/api/v1/pokemon/', function(rsp){
-					console.log(rsp);
-					var pokeData = {
-						name: rsp.name,
-						// img: 
-						types: {
-							type1: rsp.types[0].name,
-							type2: rsp.types[1].name
-							},
-						height: rsp.height,
-						weight: rsp.weight
-					}
-					console.log(pokeData);
-					$('#leftSide').on('click', this, function(){
-						$('#rightSide').append('<h2>' + pokeData.name + '</h2><img src=http://pokeapi.co/media/img/1.png><h5>Types</h5><ul><li>' + pokeData.types.type1 + '</li><li>' + pokeData.types.type2 + '</li></ul><h5>Height</h5>' + pokeData.height + '<h5>Weight</h5>' + pokeData.weight);
-					})
-					
-					
-					
-				}, 'json');
-				
+				for (var i = 1; i < 152; i++) {
+					var pokePic = 'http://pokeapi.co/media/img/' + i + '.png'					
+					var pokeURL = 'http://pokeapi.co/api/v1/pokemon/' + i								 
+					$('#pokemon').append('<img src=' + pokePic + ' id=' + i + '>');					
+				};						
+				$('img').click(function(){
+					var pokeID = $(this).attr('id');
+					console.log(pokeID);
+					var pokeImg = $(this).attr('src');
+						
+					$.get('http://pokeapi.co/api/v1/pokemon/' + pokeID, 
+						function(rsp){					
+							var pokeName = rsp.name;					
+							var pokeTypes = '';
+							var pokeHeight = rsp.height;
+							var pokeWeight = rsp.weight;
+							for (var x = 0; x < rsp.types.length; x++) {
+								pokeTypes += '<li>' + rsp.types[x].name + '</li>';
+							};														
+							$('#pokedex').html('<h2>' + pokeName + '</h2><img src=' + pokeImg 
+								+ ' class="pokeimage"><h4>Types:</h4><ul>' + pokeTypes 
+								+ '</ul><h4>Height:</h4><p>' + pokeHeight + '</p><h4>Weight:</h4><p>' + pokeWeight + '</p>');
+					}, 'json');
+				});
 			});			
 		</script>
 	</head>
@@ -45,17 +44,11 @@
 			</header>
 			
 			<main>
-				<section id="leftSide">
-					<img src="http://pokeapi.co/media/img/1.png">
+				<section id="pokemon">					
 				</section>
 				
-				<section id="rightSide">
-					
+				<section id="pokedex">
 				</section>
-				
-
-
-				
 			</main>
 		</div>
 	</body>
