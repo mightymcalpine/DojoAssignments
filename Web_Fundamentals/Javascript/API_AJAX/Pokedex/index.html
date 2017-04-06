@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pokedex</title>
+		<meta charset="utf-8">
+		<meta name="Pokedex project" content="This website is a project for coding dojo bootcamp. It uses an api to get the images of pokemon characters from a server. Additionally I'm using AJAX and jQuery to get the data and update the webpage.">
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				console.log('Hello World');
+				for (var img = 1; img < 152; img++) {
+					$('#leftSide').append('<img src=http://pokeapi.co/media/img/' + img + '.png id=' + img + '>');
+				}
+				
+				$.get('http://pokeapi.co/api/v1/pokemon/', function(rsp){
+					console.log(rsp);
+					var pokeData = {
+						name: rsp.name,
+						// img: 
+						types: {
+							type1: rsp.types[0].name,
+							type2: rsp.types[1].name
+							},
+						height: rsp.height,
+						weight: rsp.weight
+					}
+					console.log(pokeData);
+					$('#leftSide').on('click', this, function(){
+						$('#rightSide').append('<h2>' + pokeData.name + '</h2><img src=http://pokeapi.co/media/img/1.png><h5>Types</h5><ul><li>' + pokeData.types.type1 + '</li><li>' + pokeData.types.type2 + '</li></ul><h5>Height</h5>' + pokeData.height + '<h5>Weight</h5>' + pokeData.weight);
+					})
+					
+					
+					
+				}, 'json');
+				
+			});			
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Pokemon Characters</h1>
+				<h2>The Original 151</h2>
+			</header>
+			
+			<main>
+				<section id="leftSide">
+					<img src="http://pokeapi.co/media/img/1.png">
+				</section>
+				
+				<section id="rightSide">
+					
+				</section>
+				
+
+
+				
+			</main>
+		</div>
+	</body>
+</html>
