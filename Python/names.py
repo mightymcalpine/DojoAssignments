@@ -1,3 +1,4 @@
+#           ** Part I **
 students = [
      {'first_name':  'Michael', 'last_name' : 'Jordan'},
      {'first_name' : 'John', 'last_name' : 'Rosales'},
@@ -5,13 +6,13 @@ students = [
      {'first_name' : 'KB', 'last_name' : 'Tonel'}
 ]
 
-# 	Part I
-# def names():
-# 	for val in students:
-# 		print val['first_name'], val["last_name"]
-# names()
 
-# 	Part II
+def names():
+	for val in students:
+		print val['first_name'], val["last_name"]
+names()
+
+# 	     ** Part II **
 
 users = {
  'Students': [
@@ -27,13 +28,12 @@ users = {
  }
 
 def studentsInstructors():
-	studentList = users['Students']
-	InstructorList = users['Instructors']
-	print studentList[students][first_name]
-	# print InstructorList[1]
+    for item in users:
+        print item
+        counter = 0        
+        for person in users[item]:
+            length = len(person['first_name']) + len(person['last_name'])
+            counter += 1
+            print counter, '-', person['first_name'], person['last_name'], '-', length
 studentsInstructors()
-	
-	# for val in users:
-	# 	print val['first_name'], val["last_name"]
-
 	
