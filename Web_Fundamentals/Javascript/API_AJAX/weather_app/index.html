@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Weather App</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="javascript_jquery.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>What's the temp in your city?</h1>
+			</header>
+			<main>
+				<form action="index.html" method="post">
+					<label for="city" class="form-elements">City:</label>
+					<input id="city" type="text" placeholder="Enter City" class="form-elements">
+					<button id="search" type="submit" class="form-elements">Search Weather</button>
+				</form>
+				<section>
+					<h2 id="resultCity"></h2>
+					<h2 id="resultTemp"></h2>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
