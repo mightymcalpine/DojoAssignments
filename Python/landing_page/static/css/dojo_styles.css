@@ -1,0 +1,16 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-size: 3em;
+	color: #FF1493;
+	font-family: 'Russo One', sans-serif;
+}
+h2 {
+	color: #6666FF;
+}
+main {
+	width: 700px;
+	margin: 0 auto;
+}

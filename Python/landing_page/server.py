@@ -12,4 +12,8 @@ def index():
 def ninjas():
 	return render_template('ninjas.html')
 
+@app.route('/dojos')
+def dojos():
+	return render_template('dojos.html')
+
 app.run(debug=True, port=8888)

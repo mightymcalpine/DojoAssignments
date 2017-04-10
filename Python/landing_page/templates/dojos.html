@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dojos</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap-theme.min.css') }}">
+		<script type="text/javascript" src="{{ url_for('static', filename='js_jq/jquery-3.1.1.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js_jq/bootstrap.min.js') }}"></script>
+		<!-- JavaScript and jQuery  -->
+		<script type="text/javascript" src="{{ url_for('static', filename='js_jq/js_dojos.js') }}"></script>			
+		<!-- Styles  -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/dojo_styles.css') }}">
+ 		<!-- Fonts -->
+ 		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<h1>Join the Rebel Alliance Today!</h1>
+			<div class="row">
+				<section class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+					<h2>Sign Up Now</h2>
+					<form action="" method="">
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email">	
+						</div>
+						
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password">	
+						</div>
+						
+						<div class="form-group">
+							<label for="file-upload">Upload</label>
+							<input type="file" id="file-upload">	
+						</div>
+						
+						<div class="form-group">
+							<input type="submit" class="btn btn-success" value="submit" id="password">	
+						</div>
+					</form>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
