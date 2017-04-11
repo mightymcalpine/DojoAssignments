@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dojo Survey</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap-theme.min.css') }}">
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.1.1.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- JavaScript  -->
+		<script type="text/javascript" src="{{ url_for('static', filename='js/js_index.js') }}"></script>
+		<!-- Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:500" rel="stylesheet">
+		<!-- Styles  -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">		
+	</head>
+	<body>
+		<main class="container">			
+			<div class="row">
+				<section class="col-lg-5 col-md-6 col-sm-12 col-lg-offset-3">					<h1 class="push-down">Coding Dojo Survey</h1>
+					<form action="/results" method="post">
+						<div class="form-group">
+							<label for="user_name">Your Name:</label>
+							<input id="user_name" type="text" class="form-control push-down" name="name">
+						</div>
+						<div>
+							<label for="location">Dojo Location:</label>
+							<select id="location" class="form-control push-down" name="location">
+							  <option></option>
+							  <option>Seattle</option>
+							  <option>Chicago</option>
+							  <option>Dallas</option>
+							  <option>Silicon Valley</option>
+							  <option>Washington DC</option>
+							  <option>Los Angeles</option>
+							</select>
+						</div>
+						<div>
+							<label for="language">Favorite Language:</label>
+							<select id="language" class="form-control push-down" name="language">
+							  <option></option>
+							  <option>Python</option>
+							  <option>C++</option>
+							  <option>Ruby</option>
+							  <option>JavaScript</option>
+							  <option>Swift</option>
+							  <option>PHP</option>
+							  <option>Java</option>
+							</select>
+						</div>
+						<div>
+							<label id="comments">Comments (optional):</label>
+							<textarea id="comments" class="form-control push-down" rows="3" name="comments"></textarea>
+						</div>					
+						<button id="button" class="btn btn-success btn-md push-down" type="submit">Submit</button>
+					</form>					
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

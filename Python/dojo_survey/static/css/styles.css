@@ -1,0 +1,17 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-size: 3.55em;
+	color: #008040;
+	font-family: 'Palanquin Dark', sans-serif;
+	text-align: center;
+}
+.push-down {
+	margin-bottom: 20px;
+}
+/* put button in nested column for proper responsive design */
+#button {
+	margin-left: 383px;
+}

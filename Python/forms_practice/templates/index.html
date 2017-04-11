@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Form Test Index</title>
+		<meta charset="utf-8">
+		<meta name="#" content="Practicing Forms with python and flask">
+		<link rel="stylesheet" href="#">
+	</head>
+	<body>
+		<h1>Index Page</h1>
+		<h3>Create a User</h3>
+		
+		<form action="/users" method="post">
+			<label for="user_name">Name:</label>
+			<input id="user_name" type="text" name="name">
+			<br>
+			<label for="user_email">Email:</label>
+			<input id="user_email" type="text" name="email">
+			
+			<button type="submit" name="button">Create User</button>
+		</form>
+		
+		
+	</body>
+</html>

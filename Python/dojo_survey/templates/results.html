@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dojo Survey</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap-theme.min.css') }}">
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.1.1.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- JavaScript  -->
+		<script type="text/javascript" src="{{ url_for('static', filename='js/js_results.js') }}"></script>
+		<!-- Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:500" rel="stylesheet">
+		<!-- Styles  -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/results_styles.css') }}">		
+	</head>
+	<body>
+		<main class="container">
+			<header class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 push-down">
+					<h1>Submitted Info:</h1>
+				</div>
+			</header>
+			<div class="row push-down">
+				<section id="bold" class="col-lg-2 col-md-2 col-sm-2 col-lg-offset-3">	
+					<p>Name:</p>
+					<p>Dojo Location:</p>
+					<p>Favorite Language:</p>
+					<p>Commit:</p>					
+				</section>
+				<section class="col-lg-3 col-md-3 col-sm-3">
+					<p>{{ name }}</p>
+					<p>{{ location }}</p>
+					<p>{{ language }}</p>
+					<p>{{ comments }}</p>
+				</section>	
+			</div>
+			<div class="row">
+				<section class="col-lg-1 col-md-6 col-sm-6 col-lg-offset-5 push-down">
+					<form action="/" method="get">
+						<div class="form-group">
+							<button id="button" class="btn btn-success btn-sm push-down" type="submit">Back</button>
+						</div>
+					</form>
+				</section>
+			</div>	
+		</main>
+	</body>
+</html>
