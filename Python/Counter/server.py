@@ -11,13 +11,13 @@ app.secret_key = 'super1984secret'
 
 @app.route('/')
 def index():
-	counter = session['pageCount']	
+	session['pageCount'] += 1	
 	print counter
-	return render_template('index.html', counter=counter)
+	return render_template('index.html', counter=session['pageCount'])
 
 @app.route('/counter', methods=['POST'])
 def counter():
-	session['pageCount'] += 2
+	session['pageCount'] += 1
 	return redirect('/')
 	
 @app.route('/reset', methods=['POST'])
