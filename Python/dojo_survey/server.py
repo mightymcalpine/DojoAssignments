@@ -15,6 +15,7 @@ def results():
 	location = request.form['location']
 	language = request.form['language']
 	comments = request.form['comments']
+	print name, location, language, comments
 	return render_template('results.html', name=name, location=location, language=language, comments=comments)
 
 
