@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Great Number Game</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link href="https://fonts.googleapis.com/css?family=Gabriela|Mystery+Quest" rel="stylesheet">
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+		<script type="text/javascript">
+			console.log('Wat?!')
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<main>
+			
+				<h1 id="title_header">Choosy Number Game</h1>
+				<h4 class="fontstyle">I chose a number between 1 and 100</h4>
+				<h4 class="fontstyle">Can you guess what number I chose???</h4>
+				
+				{% if 'guess' in session %}
+				{% if session['guess'] == 'too HIGH' or session['guess'] == 'too LOW' %}
+					<section id="wrong_guess" class="result_box">
+						<h1 class="fontstyle">{{ session['guess'] }}</h1>
+					</section>
+				{% else %}
+					<section id="winner" class="result_box">
+						<h1 class="fontstyle">{{ session['guess'] }}</h1>
+						<h3 class="fontstyle">Yes {{ session['randomNum'] }} is right</h3>
+						<br>
+						<form action="/reset" method="get" id="reset-form">
+							<button type="submit" class="btn-style fontstyle" id="reset-btn">Play Again</button>
+						</form>
+					</section>				
+				{% endif %}	
+				{% endif %}
+				
+				<form action="/guess" method="post" id="guess-form">
+					<input type="number" name="guess" min='1' max='100' class="fontstyle">
+					<br>
+					<button type="submit" name="submit" class="fontstyle btn-style">Guess</button>
+				</form>
+
+			</main>
+		</div>		
+	</body>
+</html>

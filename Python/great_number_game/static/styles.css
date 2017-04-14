@@ -1,0 +1,66 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+#wrapper {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to bottom, #CACACA, #878787);
+}
+main {
+	margin: 0 auto;
+	width: 800px;
+	height: 900px;	
+}
+#title_header {
+	color: #009500;
+	font-size: 4em;
+	text-align: center;
+	font-family: 'Mystery Quest', cursive;
+	letter-spacing: 0.12em;
+	margin-bottom: 30px;
+	padding-top: 25px;
+}
+h4 {
+	color: #333333;
+	text-align: center;
+	margin-top: 10px;
+}
+#guess-form {
+	margin-top: 15px;
+	display: inline-block;
+	margin-left: 325px;
+}
+input {
+	width: 115px;
+	padding: 5px;
+	text-align: center;
+}
+.btn-style {
+	padding: 10px;
+	border-style: none;
+	box-shadow: 3px 3px 5px #333333;
+	color: #E6E6E6;
+	background-color: #004B9A;
+	border-radius: 10px;
+	margin: 15px 0 10px 22px;
+}
+.fontstyle {
+	font-family: 'Gabriela', cursive;
+	font-size: 1.35em;
+	text-align: center;
+}
+#winner {
+	background-color: #009500;
+}
+#wrong_guess {
+	background-color: #DA0000;
+}
+.result_box {
+	width: 175px;
+	height: auto;
+	border: 1px solid #242424;
+	margin: 20px 0 0 293px;
+	color: #E6E6E6;
+	padding: 10px;
+}

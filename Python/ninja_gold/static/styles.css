@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+#wrapper {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+}
+.header {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 20px 10px 5px 0;
+}
+#goldtotal {
+	border: 1px #000000 solid;
+	width: 50px;
+	height: 20px;
+}
+.containers {
+	display: inline-block;
+	border: 2px solid #004D9F;
+	width: 19%;
+	height: 150px;
+	padding: 10px;
+	margin: 15px 25px 15px 0;
+	text-align: center;
+}
+.pushright {
+	margin-left: 25px;
+}
+#activityBox {
+	width: 920px;
+	height: 150px;
+	border: 2px solid #004D9F;
+	overflow: auto;
+	margin: 7px 0 0 25px;
+	padding: 10px;
+}
