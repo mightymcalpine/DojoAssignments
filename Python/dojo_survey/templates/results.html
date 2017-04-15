@@ -5,12 +5,13 @@
 		<meta charset="utf-8">
 		<meta name="#" content="#">
 		<!-- Bootstrap  -->
-		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
-		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap-theme.min.css') }}">
-		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.1.1.min.js') }}"></script>
-		<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-		<!-- JavaScript  -->
-		<script type="text/javascript" src="{{ url_for('static', filename='js/js_results.js') }}"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>		
 		<!-- Fonts  -->
 		<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:500" rel="stylesheet">
 		<!-- Styles  -->
@@ -24,17 +25,17 @@
 				</div>
 			</header>
 			<div class="row push-down">
-				<section id="bold" class="col-lg-2 col-md-2 col-sm-2 col-lg-offset-3">	
+				<section id="bold" class="col-lg-2 col-md-3 col-sm-3 col-lg-offset-3">	
 					<p>Name:</p>
 					<p>Dojo Location:</p>
 					<p>Favorite Language:</p>
 					<p>Commit:</p>					
 				</section>
-				<section class="col-lg-3 col-md-3 col-sm-3">
-					<p>{{ name }}</p>
-					<p>{{ location }}</p>
-					<p>{{ language }}</p>
-					<p>{{ comments }}</p>
+				<section class="col-lg-3 col-md-4 col-sm-4">
+					<p>{{ session['name'] }}</p>
+					<p>{{ session['location'] }}</p>
+					<p>{{ session['language'] }}</p>
+					<p>{{ session['comments'] }}</p>
 				</section>	
 			</div>
 			<div class="row">
