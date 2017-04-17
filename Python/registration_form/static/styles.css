@@ -1,0 +1,28 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-size: 2.69em;
+	font-family: 'Nova Cut', cursive;
+	margin-bottom: 30px;
+	border-bottom: 4px solid #FFD700;
+	padding-bottom: 15px;
+	font-weight: 900;
+}
+form {
+	font-family: 'Jacques Francois', serif;
+	font-size: 1.25em;
+	margin-top: 15px;
+}
+span {
+	color: #FFD700;
+}
+#pushdown {
+	color: #E20000;	
+}
+#success {
+	font-size: 1.8em;
+	margin-bottom: 20px;
+	color: #009B00;
+}
