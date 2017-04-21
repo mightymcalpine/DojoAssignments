@@ -1,0 +1,12 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	color: #0080FF;
+}
+img {
+	width: 200px;
+	height: auto;
+	display: inline-block;
+}
