@@ -7,18 +7,18 @@
 		<link rel="stylesheet" href="{{ url_for('static', filename='ninjas_styles.css') }}">
 	</head>
 	<body>
-		
-		{% if color == 'none' %}
-			<h1>Teenage Mutant Ninja Turtles</h1>
-			<img src="{{ url_for('static', filename='images/leonardo.jpg') }}" alt="leonardo">
-			<img src="{{ url_for('static', filename='images/donatello.jpg') }}" alt="leonardo">
-			<img src="{{ url_for('static', filename='images/raphael.jpg') }}" alt="leonardo">
-			<img src="{{ url_for('static', filename='images/michelangelo.jpg') }}" alt="leonardo">
-		{% else %}
-			<h1>{{ ninja.title() }}</h1>
-			<img src="{{url_for('static', filename='images/')}}{{ ninja }}.jpg" alt="{{ninja}}">
-		{% endif %}
-		
+		<main>
+			{% if color == 'none' %}
+				<h1>Teenage Mutant Ninja Turtles</h1>
+				<img src="{{ url_for('static', filename='images/leonardo.jpg') }}" alt="leonardo">
+				<img src="{{ url_for('static', filename='images/donatello.jpg') }}" alt="leonardo">
+				<img src="{{ url_for('static', filename='images/raphael.jpg') }}" alt="leonardo">
+				<img src="{{ url_for('static', filename='images/michelangelo.jpg') }}" alt="leonardo">
+			{% else %}
+				<h1>{{ ninja.title() }}</h1>
+				<img src="{{url_for('static', filename='images/')}}{{ ninja }}.jpg" alt="{{ninja}}">
+			{% endif %}
+		</main>
 		
 		
 	</body>

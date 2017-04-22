@@ -2,6 +2,27 @@
 	padding: 0;
 	margin: 0;
 }
+div {
+	width: 100vw;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+div::after {
+  content: "";
+  background: url('images/dojo.jpg');
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 h1 {
-	color: hotpink;
+	color: #f1efcc;
+	font-family: 'Trade Winds', cursive;
+	text-align: center;
+	font-size: 4em;
+	padding-top: 20px;
 }

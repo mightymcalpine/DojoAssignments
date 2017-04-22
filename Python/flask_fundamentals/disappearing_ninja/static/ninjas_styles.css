@@ -2,11 +2,34 @@
 	padding: 0;
 	margin: 0;
 }
+main {
+	margin: 0 auto;
+}
 h1 {
-	color: #0080FF;
+	color: #008301;
+	text-align: center;
+	font-size: 3em;
+	padding-top: 20px;
+	margin-bottom: 25px;
 }
 img {
 	width: 200px;
-	height: auto;
+	height: 200px;
+	margin: 25px;
 	display: inline-block;
+}
+#blue {
+	color: 0080FF;
+}
+#purple {
+	color: ;
+}
+#red {
+	color: ;
+}
+#orange {
+	color: ;
+}
+#no-color{
+	color: ;
 }
