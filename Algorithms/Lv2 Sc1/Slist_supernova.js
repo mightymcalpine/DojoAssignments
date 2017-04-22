@@ -12,7 +12,7 @@ function sList() {
 			while(runner.nextNode){
 				runner = runner.nextNode
 			}
-			runner.next = newNode
+			runner.nextNode = newNode
 		}
 		return this
 	}
@@ -50,7 +50,7 @@ function sList() {
 		return this.head.value
 	}
 	this.contains = function(val){
-		var runner = this .head
+		var runner = this.head
 		while(runner){
 			if(runner.value == val){
 				return true
@@ -81,45 +81,68 @@ function sList() {
 		}
 		return
 	}
-	
+	this.minMaxAvg = function(){
+		// console.log(this.length())
+		if (!this.head) {
+			return null
+		}				
+		if (this.length() == 1) {
+			return 'There is only one node in the list'
+		}
+		var runner = this.head.nextNode
+		if (runner) {
+			var max = min = sum = this.head.value		 		
+			while	(runner) {
+				if (runner.value > max) {
+					max = runner.value
+				}
+				if (runner.value < min) {
+					min = runner.value
+				}
+				sum += runner.value
+				runner = runner.nextNode
+			}
+			var avg = sum / this.length()
+			return 'The max is: ' + max + ', The min is: ' + min + ', The avgerag is: ' + avg
+		}
+	}
 }
 
-
-
-
-
-
-
-function addToBack(val) {
-	var runner = this.head
+function addToBack(list, node) {
+	var runner = list.head
 	if (!runner) {
-		this.head = node
+		list.head = node
 	}
 	else {
 		while(runner.nextNode){
 			runner = runner.nextNode
 		}
-		runner.next = node
+		runner.nextNode = node
 	}
 	return list
 }
-
-
+// node constructor
 function listNode(val) {
-	this.value = null;
-	this.next = val;
+	this.value = val;
+	this.nextNode = null;
 }
 
 
 var ourList = new sList()
-var nodeOne = new listNode(5)
-var nodeTwo = new listNode(10)
-var nodeThree = new listNode(15)
+var nodeOne = new listNode(1)
+var nodeTwo = new listNode(2)
+var nodeThree = new listNode(3)
 
 addToBack(ourList, nodeOne)
 addToBack(ourList, nodeTwo)
 addToBack(ourList, nodeThree)
 
-ourList.addToBack(20)
-console.log(ourList);
-console.log(ourList.head);
+ourList.addToBack(4).addToBack(5).addToBack(6)
+// ourList.removeFront()
+// console.log(ourList);
+// console.log(ourList.head);
+// console.log(ourList.length());
+ourList.display();
+console.log(ourList.minMaxAvg())
+
+
