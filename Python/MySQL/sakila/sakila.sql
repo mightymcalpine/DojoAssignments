@@ -22,13 +22,13 @@ WHERE actor.actor_id = 5;
 #Q4
 #all the customers in store_id = 1 and inside these cities (1, 42, 312 and 459)?
 #Your query should return customer first name, last name, email, and address
-SELECT store.store_id, city.city_id, customer.first_name, customer.last_name, customer.email, address.address
+SELECT customer.first_name, customer.last_name, customer.email, address.address
 FROM customer
-JOIN store ON customer.store_id = store.store_id
-JOIN address ON address.address_id = customer.address_id
-JOIN city ON city.city_id = address.city_id
-WHERE city.city_id = 1
-AND store.store_id IN (1, 42, 312, 459);
+LEFT JOIN address ON address.address_id = customer.address_id
+WHERE customer.store_id = 1
+AND address.city_id IN (1, 42, 312, 459);
+
+
 
 #Q5
 #all the films with a "rating = G" and "special feature = behind the scenes", joined by actor_id = 15?
