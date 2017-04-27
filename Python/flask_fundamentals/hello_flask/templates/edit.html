@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="#">
+	</head>
+	<body>
+	<h2>Edit User {{user['first_name']}} {{user['last_name']}}</h2>
+		<form action="/user/update/{{user['id']}}" method="post">
+			<input type="text" name="fname" value="{{user['first_name']}}">
+			<input type="text" name="lname" value="{{user['last_name']}}">
+			<input type="email" name="email" 
+			placeholder="dollar@swag.net" value="{{user['email']}}">
+			<button type="submit" name="submit">Submit</button>
+		</form>
+		<a href="/user/{{user['id']}}">Go Back</a>
+	</body>
+</html>

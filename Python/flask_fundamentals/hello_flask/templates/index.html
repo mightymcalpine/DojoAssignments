@@ -4,17 +4,62 @@
 		<title>Force Power Rising</title>
 		<meta charset="utf-8">
 		<meta name="#" content="#">
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-		<script src="{{ url_for('static', filename='js/javascript.js') }}"></script>
 	</head>
 	<body>
 		
 		<h1>Hello World!</h1>
-		<h2>{{name}} I'm using Flask!</h2>		
 		
-		{% for number in range(age) %}
-		<a href="/numbers">{{number}} | </a>
+		<h2>
+			{% if 'user' in session %}
+			{{session['user']['first_name']}}
+			{% endif %} Hey using Flask here!
+		</h2>
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		{% for message in messages %}
+		{% autoescape false %}
+		{{message}}
+		{% endautoescape %}
 		{% endfor %}
+		{% endif %}
+		{% endwith %}
 		
+		<form action="/user" method="post">
+			<input type="hidden" name="count"
+			value="{{session['counter']}}">
+			<input type="text" name="fname">
+			<input type="text" name="lname">
+			<input type="email" name="email" 
+			placeholder="dollar@swag.net">
+			<!-- <input type="date" name="date"> -->
+			<button type="submit" name="submit">Submit</button>
+		</form>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>id</th>
+					<th>Show</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for user in all_users %}
+				<p>{{ user }}</p>
+				<tr>
+					<td>{{user['first_name']}}</td>
+					<td>{{user['last_name']}}</td>
+					<td>{{user['email']}}</td>
+					<td>{{user['id']}}</td>
+					<td><a href="/user/{{user['id']}}">Show</a></td>
+					<td><a href="/user/delete/{{user['id']}}">Delete</a></td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<a href="/clear">Clear Session</a>
 	</body>
 </html>
