@@ -1,0 +1,30 @@
+Marty McAlpine
+Thrs April 27, 2017
+Python I
+
+MySQL Connection Errors
+
+1. I tried changing the localhost to an IP address and removing that line of code all together - neither produced any change. I stopped the server, restarted it but removing or changing the localhost config produced no errors.
+
+2. If you change the database key value to something other than the `db` argument that we passed in, the server breaks, the page fails to load. This produces a `NameError` and states that it expected the `db` argument. It can be resolved by setting the value of the database key to the argument that is passed into the function.
+
+3. If you change the user key value, you get the following error:
+
+OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user ‘moon’@‘localhost' (using password: YES)")
+
+In this case, moon is not an authorized user as defined on the localhost. Go to the connection config for your localhost (mySQL workbench) in this case to define the authorized user name.
+
+4. If you remove the user key and value from the config object all together, your server breaks because the user key is called in the DATABASE_URI variable. The same result occurs if you remove the database or port keys as well.
+
+5. If you change the password key value, you get the following error:
+
+OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The user is authorized but access is denied because the wrong password was provided.
+
+6. If you change the port number, then try to reload the page, it stalls for a few minutes looking the server on the port, ultimately the browser cannot find the server on the port and you get the following error:
+
+OperationalError: (_mysql_exceptions.OperationalError) (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+The port number must match the port specified in your localhost configuration, in this case defined and matched in MAMP and MySQL workbench.
+
