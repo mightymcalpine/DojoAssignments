@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Validation Success</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+	</head>
+	<body>
+		<section id="green">
+			<h1>Congratulations!</h1>
+			<p id="valid_email">{{email['email']}}</p>
+			<p>is a valid email</p>
+		</section>
+		<h2 class="align_items">Email Addresses Entered:</h2>
+		<table>
+			<col width="225">
+			<col width="175">
+			<thead>
+				<tr>
+					<th>Email</th>
+					<th>Timestamp</th>
+				</tr>
+			<tbody>
+				{% for email in all_email %}
+				<tr>
+					<td>{{email['email']}}</td>
+					<td>{{email['created_at'].strftime('%m-%d-%Y %I:%M %p')}}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+			</thead>
+		</table>
+	</body>
+</html>

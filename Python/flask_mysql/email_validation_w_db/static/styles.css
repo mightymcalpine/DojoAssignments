@@ -1,0 +1,35 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.red {
+	color: #E20000;
+	font-size: 1.5em;
+	margin-left: 50px;
+}
+#green {
+	background-color: #15A21B;
+	border: 1px solid #000000;
+	text-align: center;
+	padding: 20px 0;
+	width: 450px;
+	margin-left: 50px;
+	font-size: 1.5em;
+	line-height: 1.4em;
+}
+th {
+	text-align: left;
+}
+td {
+	height: 25px;
+}
+#valid_email {
+	color: #FEFEFE;
+	padding-top: 5px;
+}
+table {
+	margin-left: 50px;
+}
+.align_items {
+	margin: 20px 0 20px 50px;
+}
