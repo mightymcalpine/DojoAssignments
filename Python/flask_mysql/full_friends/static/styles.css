@@ -1,0 +1,41 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.btn-style {
+	margin-right: 5px;
+}
+.form-style {
+	display: inline-block;
+}
+#form-pad {
+	margin-top: 15px;
+}
+h1 {
+	font-family: 'Holtwood One SC', serif;
+	font-size: 3.3em;
+	margin: 35px 0;
+	text-align: center;
+}
+h2 {
+	font-family: 'Holtwood One SC', serif;
+	font-size: 3em;
+	margin: 35px 0;
+}
+h3 {
+	font-family: 'Holtwood One SC', serif;
+	font-size: 2em;
+	margin: 35px 0;
+}
+.index-font {
+	font-family: 'Habibi', serif;
+	font-size: 1.1em;
+}
+.red {
+	color: #E30002;
+}
+#who-me {
+	margin-top: 35px;
+	width: 325px;
+	height: auto;
+}

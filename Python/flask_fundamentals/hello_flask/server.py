@@ -13,7 +13,7 @@ mysql = MySQLConnector(app, 'users_db')
 app.secret_key = 'manysecrets1984'
 rightnow = datetime.now()
 print 'time is', rightnow
-EMAILREG = re.compile(r'^[a-zA-Z0-9.-_+]+@[a-zA-Z0-9._-]+\.[a-zA-Z]*$')
+EMAILREG = re.compile(r'^[a-zA-Z0-9\.\+-_]+@[a-zA-Z0-9._-]+\.[a-zA-Z]*$')
 
 @app.route('/')
 def hello():
@@ -23,14 +23,6 @@ def hello():
 
 @app.route('/user', methods=['POST'])
 def addUser():
-	# pickedDate = datetime.strptime(request.form['date'], '%Y-%m-%d')
-	# print pickedDate
-	
-	# if pickedDate <= rightnow:
-	# 	print 'I am before'
-	# else:
-	# 	print 'I am after'
-	
 	user_info = {
 	'first_name': request.form['fname'],
 	'last_name': request.form['lname'],
