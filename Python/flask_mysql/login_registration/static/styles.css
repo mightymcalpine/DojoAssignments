@@ -1,0 +1,16 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+h2 {
+	font-family: 'Bungee Inline', cursive;
+}
+label, h3 {
+	font-family: 'Jaldi', sans-serif;
+}
+input {
+	margin-bottom: 10px;
+}
+.red {
+	color: #D6000A;
+}
