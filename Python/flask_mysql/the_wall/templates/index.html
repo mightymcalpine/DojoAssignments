@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Wall</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- jQuery compiled and minified v3.2.1 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Jaldi" rel="stylesheet">
+		<!-- Main styles -->
+		<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		 	<div class="container-fluid">	
+		   	<div class="navbar-header">
+		   		<a class="navbar-brand" href="#">
+			        <img alt="Brand" src="{{url_for('static', filename='bolt3.png')}}">
+			      </a>
+		   	</div>
+		   	<h3 class="navbar-text">Coding Revolution</h3>
+			</div>
+		</nav>
+		<main class="container">
+			<section class="row">
+				<h1 class="h1-style">Welcome to Coding R<span>evol</span>ution</h1>
+				<h3 id="h3-style"><em>For the Love of Coding</em></h3>
+				<br>
+			</section>
+			<section class="row">
+				<div class="col-md-4">
+					<!-- <h2>Ready to Join the Revolution</h2> -->
+					<h3>Create an Account</h3>
+					<form action="/register" method="POST" class="" id="register-form">
+						<div class="form-group">
+							<label for="first_name">First Name</label>
+							<input type="text" name="fname" id="first_name" class="form-control">
+							{% with messages = get_flashed_messages(category_filter=["fname"]) %}
+							  {% if messages %}
+							    <ul class=flashes>
+							    {% for message in messages %}
+							      <li>{{ message }}</li>
+							    {% endfor %}
+							    </ul>
+							  {% endif %}
+							{% endwith %}							
+							<label for="last_name">Last Name</label>
+							<input type="text" name="lname" id="last_name" class="form-control">
+							{% with messages = get_flashed_messages(category_filter=["lname"]) %}
+							  {% if messages %}
+							    <ul class=flashes>
+							    {% for message in messages %}
+							      <li>{{ message }}</li>
+							    {% endfor %}
+							    </ul>
+							  {% endif %}
+							{% endwith %}
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" class="form-control">
+							{% with messages = get_flashed_messages(category_filter=["email"]) %}
+							  {% if messages %}
+							    <ul class=flashes>
+							    {% for message in messages %}
+							      <li>{{ message }}</li>
+							    {% endfor %}
+							    </ul>
+							  {% endif %}
+							{% endwith %}
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" class="form-control">
+							{% with messages = get_flashed_messages(category_filter=["password"]) %}
+							  {% if messages %}
+							    <ul class=flashes>
+							    {% for message in messages %}
+							      <li>{{ message }}</li>
+							    {% endfor %}
+							    </ul>
+							  {% endif %}
+							{% endwith %}
+							<label for="confirm_pw">Confirm Password</label>
+							<input type="password" name="confirm_pw" id="confirm_pw" class="form-control">
+							{% with messages = get_flashed_messages(category_filter=["confirm_pw"]) %}
+							  {% if messages %}
+							    <ul class=flashes>
+							    {% for message in messages %}
+							      <li>{{ message }}</li>
+							    {% endfor %}
+							    </ul>
+							  {% endif %}
+							{% endwith %}
+							<button type="submit" value="" class="btn btn-sm btn-success">Create</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-4">
+					<!-- <h2>Already a Freedom Fighter?</h2> -->
+					<h3>Login Here</h3>
+					<form action="/login" method="POST" class="">
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" class="form-control">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" class="form-control">
+							<button type="submit" value="" class="btn btn-sm btn-primary">Login</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<br>
+			<section class="row">
+				<div class="col-md-9">
+					<blockquote class="blockquote">
+					  <p class="">Everybody in this country should learn how to program a computer, should learn a computer language, because it teaches you how to think.</p>
+					  <footer class="blockquote-footer">Steve Jobs in <cite title="Source Title"><a href="http://www.pbs.org/nerds/">Triumph of the Nerds </a></cite></footer>
+					</blockquote>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

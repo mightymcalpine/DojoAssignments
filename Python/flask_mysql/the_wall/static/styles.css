@@ -1,0 +1,80 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+h1, h2 {
+	font-family: 'Bungee Inline', cursive;
+}
+.h1-style {
+	font-size: 3em;
+	border-spacing: 0.5em;
+}
+#h3-style {
+	margin-top: 0;
+}
+label, h3 {
+	font-family: 'Jaldi', sans-serif;
+}
+input {
+	margin-bottom: 10px;
+}
+.red {
+	color: #D6000A;
+}
+img {
+	width: 35px;
+	height: auto;
+}
+.navbar-brand {
+	padding: 13px 15px;
+}
+a.navbar-link {
+	padding-right: 25px;
+}
+.btn-style {
+	margin: 10px 0;
+}
+.timestamp {
+	font-style: italic;
+	font-size: 0.65em;
+	color: #808080;
+	margin-bottom: 1px;
+}
+h4, h5 {
+	margin: 15px 0 3px 0;
+}
+.nav-align {
+	display: inline-block;
+}
+#btn-logout {
+	margin: 15px 15px 0 0;
+	color: #D30001;
+}
+#cmt-pad {
+	margin-left: 15px;
+}
+.flashes {
+	color: #F27400;
+}
+li {
+	list-style: none;
+}
+.header-style {
+	display: inline-block;
+	vertical-align: middle;
+}
+#welcome-btn {
+	margin: 10px 0 0 15px;
+}
+.welcome-msg {
+	padding: 10px 20px;
+}
+span {
+	color: #D30001;
+}
+#post-form-style {
+	margin: 45px 0;
+}
+blockquote {
+	margin-top: 35px;
+}

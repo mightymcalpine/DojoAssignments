@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Login and Registration</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">		
+		<!-- jQuery compiled and minified v3.2.1 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Jaldi" rel="stylesheet">
+		<!-- Main styles -->
+		<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		 	<div class="container-fluid">				
+				<div class="form-group nav-align navbar-right">
+					<form action="/logout" method="get" class="nav-align">
+						<button type="submit" class="btn btn-xs btn-default" id="btn-logout">Logout</button>
+					</form>
+				</div>
+				<p class="navbar-text navbar-right">Signed in as <a href="#" 
+					class="navbar-link">{{userName}}</a></p>
+		   	<div class="navbar-header">
+		   		<a class="navbar-brand" href="#">
+			        <img alt="Brand" src="{{url_for('static', filename='bolt3.png')}}">
+			      </a>
+		   	</div>
+		   	<h3 class="navbar-text">Coding Revolution</h3>
+			</div>
+		</nav>
+		<main class="container">
+			<header>
+				<h1 class="header-style h1-style">The Wall</h1>
+				<!-- Welcome Modal Message -->
+				<button type="button" class="btn btn-primary header-style btn-md" data-toggle="modal" data-target=".bs-example-modal-lg" id="welcome-btn">Welcome</button>
+
+				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+				  <div class="modal-dialog modal-lg" role="document">
+				    <div class="modal-content">
+				      <h3 class="welcome-msg">Hey <span>{{userName}}</span> Welcome to Coding Revolution</h3>
+				      <p class="welcome-msg">Code Rev is place where new and aspiring coders can share about their experiences learning to code. Post a message about what you're learning, how to code something, or a great resource you've found. We all want to become software developers and build great software, so let's do it together.</p>
+				    </div>
+				  </div>
+				</div>
+			</header>
+			<section class="row">
+				<div class="col-lg-8 col-md-8">
+					<div class="form-group">
+						<form action="/message" method="post" id="post-form-style">
+							<label for="message">Post A Message</label>
+							<textarea id="message" name="message" class="form-control" rows="5"></textarea>
+							{% with messages = get_flashed_messages() %}
+								{% if messages %}
+									{% for message in messages %}
+										{% autoescape false %}
+										<p class="red">{{message}}</p>
+										{% endautoescape %}
+									{% endfor %}
+								{% endif %}
+							{% endwith %}
+							<div class="form-group">
+								<div class="col-sm-1 col-lg-offset-11 col-sm-offset-11 col-xs-offset-10">
+									<button type="submit" class="btn btn-sm btn-primary btn-style">Post</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- posted messages -->
+			<section class="row">
+				<div class="col-lg-8 col-md-8">
+					{% for msg in postMsg %}						
+						<h4>{{msg['name']}}</h4>
+						<p class="timestamp">{{msg['created_at'].strftime('%m-%d-%Y %I:%M %p')}}</p>
+						<p>{{msg['message']}}</p>
+							<div class="col-lg-10 col-lg-offset-0.5" id="cmt-pad">
+								{% for cmt in postComment %}
+									{% if msg['msgID'] == cmt['message_id'] %}
+										<h5>{{cmt['name']}}</h5>
+										<p class="timestamp">{{cmt['created_at'].strftime('%m-%d-%Y %I:%M %p')}}</p>
+										<p>{{cmt['comment']}}</p>
+									{% endif %}								
+								{% endfor %}
+							{% if msg %}
+							</div>
+							<section class="row">
+								<div class="col-lg-12">
+									<div class="form-group">
+										<form action="/comment/{{msg['msgID']}}" method="post">
+											<label for="comment">Post A Comment</label>
+											<textarea id="comment" name="comment" class="form-control" rows="2"></textarea>
+											<div class="form-group">
+												<div class="col-sm-1 col-lg-offset-11 col-sm-offset-11 col-xs-offset-10">
+													<button type="submit" class="btn btn-sm btn-success btn-style">Post</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</section>
+						{% endif %}							
+					{% endfor %}
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
