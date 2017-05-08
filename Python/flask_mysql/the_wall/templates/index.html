@@ -39,7 +39,6 @@
 			</section>
 			<section class="row">
 				<div class="col-md-4">
-					<!-- <h2>Ready to Join the Revolution</h2> -->
 					<h3>Create an Account</h3>
 					<form action="/register" method="POST" class="" id="register-form">
 						<div class="form-group">
@@ -91,12 +90,12 @@
 							<input type="password" name="confirm_pw" id="confirm_pw" class="form-control">
 							{% with messages = get_flashed_messages(category_filter=["confirm_pw"]) %}
 							  {% if messages %}
-							    <ul class=flashes>
-							    {% for message in messages %}
-							      <li>{{ message }}</li>
-							    {% endfor %}
-							    </ul>
-							  {% endif %}
+							   	<ul class=flashes>
+							   	{% for message in messages %}
+							   		<li>{{ message }}</li>
+							   	{% endfor %}
+							   	</ul>
+								{% endif %}
 							{% endwith %}
 							<button type="submit" value="" class="btn btn-sm btn-success">Create</button>
 						</div>
@@ -104,18 +103,26 @@
 				</div>
 				<div class="col-md-1">
 				</div>
-				<div class="col-md-4">
-					<!-- <h2>Already a Freedom Fighter?</h2> -->
+				<div class="col-md-4">					
 					<h3>Login Here</h3>
-					<form action="/login" method="POST" class="">
-						<div class="form-group">
+					<div class="form-group">
+						<form action="/login" method="POST" class="">
 							<label for="email">Email</label>
-							<input type="email" name="email" id="email" class="form-control">
+							<input type="email" name="email" id="email" class="form-control">			
 							<label for="password">Password</label>
 							<input type="password" name="password" id="password" class="form-control">
+							{% with messages = get_flashed_messages(category_filter=["loginError"]) %}
+							  {% if messages %}
+							   	<!-- <ul class=flashes> -->
+							   	{% for message in messages %}
+							   		<p class="flashes">{{ message }}</p>
+							   	{% endfor %}
+							   	<!-- </ul> -->
+								{% endif %}
+							{% endwith %}
 							<button type="submit" value="" class="btn btn-sm btn-primary">Login</button>
-						</div>
-					</form>
+						</form>
+					</div>
 				</div>
 			</section>
 			<br>

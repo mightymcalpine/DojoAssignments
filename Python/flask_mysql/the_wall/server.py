@@ -62,10 +62,9 @@ def newAccount():
 				'fname': newUser['first_name'],
 				'lname': newUser['last_name']
 			}
-	# Pass userName into navbar when logged in
+	# assign session keys to vars for passing into html doc
 		userID = session['user']['id']
 		userName = session['user']['fname']+' '+session['user']['lname']
-	
 	return redirect('/wall')
 
 @app.route('/login', methods=['POST'])
@@ -91,12 +90,8 @@ def login():
 		print 'NAME HERE', userName
 		return redirect('/wall')
 	else:
-		flash('Login error - Email or Password are incorrect')
+		flash('Login error - Email or Password are incorrect', 'loginError')
 		return redirect('/')
-
-
-
-
 
 @app.route('/wall')
 def theWall():
@@ -106,9 +101,7 @@ def theWall():
 	postMsg = mysql.query_db(msgQuery)
 	commentQuery = "SELECT comments.id, comments.comment, comments.created_at, CONCAT(users.first_name, ' ', users.last_name) AS name, message_id FROM comments JOIN messages ON comments.message_id = messages.id JOIN users ON comments.user_id = users.id"
 	postComment = mysql.query_db(commentQuery)
-	
 	return render_template('wall.html', userName=userName, postMsg=postMsg, postComment=postComment)
-
 
 @app.route('/message', methods=['POST'])
 def msgPost():
@@ -144,21 +137,5 @@ def logout():
 	session.clear()
 	flash('You have been logged out')
 	return redirect('/')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 app.run(debug=True, port=5151)
