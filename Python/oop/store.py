@@ -1,5 +1,8 @@
+# instantiate class product
 class product(object):
+	# init method runs every time new object is instantiated
 	def __init__(self, price, name, weight, brand, cost):
+		# attributes shared by every new object
 		self.price = price
 		self.name = name
 		self.weight = weight
@@ -92,4 +95,5 @@ print product3.sell().show()
 
 # instance/object of the store class
 store1 = store('Forever Fahrvergnugen', 'Minneapolis, MN', 'Deitrick Bahn', [product1, product2, product3])
+# object/instance calling methods from store class
 print store1.addProduct(product4).removeProduct(product1).show().showInventory()
