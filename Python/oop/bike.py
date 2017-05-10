@@ -6,7 +6,7 @@ class bike(object):
 		
 	def displayInfo(self):
 		print 'Price is', self.price, 'Top speed is', self.maxSpeed, 'Miles ridden', self.miles
-		return self
+
 		
 	def ride(self):
 		print 'Riding'
