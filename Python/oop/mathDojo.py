@@ -1,5 +1,5 @@
 class MathDojo(object):
-	# init method run for every instance of animal class
+	# init method run for every instance of MathDojo class
 	def __init__(self):
 		self.result = 0
 	
