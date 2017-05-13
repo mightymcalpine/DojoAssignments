@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title>McAlpine Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- jQuery compiled and minified v3.2.1 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Fonts -->
+		
+		<!-- Main styles -->
+		<link rel="stylesheet" href="{% static 'portfolio/css/portfolio_styles.css' %}">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<header class="row">
+				<div class="col-lg-10 col-lg-offset-1">
+					<h1>Hi, I'm Marty McAlpine</h1>
+					<h3>My Portfolio</h3>					
+				</div>
+			</header>
+			<main class="row">
+				<div class="col-lg-2 col-lg-offset-3 box-layout">					
+					<div class="box-style">					
+						<h4><a href="{% url 'projects' %}">Projects</a></h4>
+						<p class="text-justified">Take a look as some of the code I've writen and the projects I've been a part of. There's a mix of personal and client work here. These projects and apps are coded in Python and JavaScript. These project represent hundreds of hours of learning and hard work. I proud of how they've turned out</p>
+					</div>
+				</div>
+				<div class="col-lg-2 box-layout">					
+					<div class="box-style">
+						<h4><a href="{% url 'about' %}">About</a></h4>
+						<p class="text-justified">I'm a recent graduate of Coding Dojo code boot camp. I just finished 5 months of instense learning where I was coding 60 hours a week. It was awesome and I learned a ton. I am so energized to join a team who's making great software that is impacting peoples lives for the better.</p>
+					</div>
+				</div>
+				<div class="col-lg-2 box-layout">					
+					<div class="box-style">
+						<h4><a href="{% url 'testimonials' %}">Testimonials</a></h4>
+						<p class="text-justified">I have been blessed to learn and code along side some amazing people over the past year. Here are some generous things my peers, mentors, and clients have to say about my character and my code.</p>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

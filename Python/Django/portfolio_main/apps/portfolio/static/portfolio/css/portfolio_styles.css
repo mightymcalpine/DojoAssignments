@@ -1,0 +1,14 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-size: 3em;
+	margin: 25px 25px 25px 300px;
+}
+#testimonial1 {
+	margin: 50px 35px 50px 125px;
+}
+#testimonial2 {
+	margin: 35px 35px 35px 225px;
+}
