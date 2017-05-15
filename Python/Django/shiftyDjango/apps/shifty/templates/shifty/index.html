@@ -7,8 +7,14 @@
 		<link rel="stylesheet" href="#">
 	</head>
 	<body>
-		
 		<h1>Index dot HTML</h1>
-		
+		<h4>{{request.session.user.name}}</h4>
+		<form action="/newUser" method="post">
+			{% csrf_token %}
+			<!-- generates toke to prevent cross-site request forgery -->
+			<label for="fname">first name</label>
+			<input type="text" name="fname">
+			<button type="submit" value="submit">Create</button>
+		</form>
 	</body>
 </html>
