@@ -12,6 +12,7 @@ def show(request):
 	return render(request, 'shifty/showUsers.html')
 
 def addUser(request):
+	print 'Session Object:', dir(request.session)
 	if request.method == 'POST':
 		print '*'*50
 		print 'METHOD:', request.method

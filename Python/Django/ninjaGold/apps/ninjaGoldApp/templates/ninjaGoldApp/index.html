@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title>Ninja Gold</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="{% static 'ninjaGoldApp/css/styles.css' %}">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div>
+				<p class="header pushright">Your Gold</p>
+				<p class="header" id="goldtotal">###</p>
+				<!-- request.session gold -->
+				<form action="/reset" method="get" class="header">
+					<button type="submit" name="reset" id="reset-btn" class="btn-style">Clear</button>
+				</form>
+			</div>
+			<!-- FARM -->
+			<section id="farm" class="containers pushright">
+				<h3>Farm</h3>
+				<p>(earn 10-20 golds)</p>
+				<form action="/processGold" method="post">
+					<input type="hidden" name="building" value="farm">
+					<button type="submit" class="btn-style">Find Gold!</button>
+				</form>
+			</section>
+			<!-- CAVE -->
+			<section id="cave" class="containers">
+				<h3>Cave</h3>
+				<p>(earn 5-10 golds)</p>
+				<form action="/processGold" method="post">
+					<input type="hidden" name="building" value="cave">
+					<button type="submit" class="btn-style">Find Gold!</button>
+				</form>
+			</section>
+			<!-- HOUSE -->
+			<section id="house" class="containers">
+				<h3>House</h3>
+				<p>(earn 2-5 golds)</p>
+				<form action="/processGold" method="post">
+					<input type="hidden" name="building" value="house">
+					<button type="submit" class="btn-style">Find Gold!</button>
+				</form>
+			</section>
+			<!-- CASINO -->
+			<section id="casino" class="containers">
+				<h3>Casino</h3>
+				<p>(earns/takes 0-50 golds)</p>
+				<form action="/processGold" method="post">
+					<input type="hidden" name="building" value="casino">
+					<button type="submit" class="btn-style">Find Gold!</button>
+				</form>
+			</section>
+			<!-- ACTIVITY -->
+			<p class="pushright">Activities</p>
+			<div id="activityBox">
+			
+			{% if messages %}
+			<!-- optional container -->
+				{% for msg in messages %}
+					{{msg}}
+				{% endfor %}
+			{% endif %}
+			<!-- 
+			
+				activity log/messages 
+			
+			-->
+			</div>
+		</div>
+	</body>
+</html>

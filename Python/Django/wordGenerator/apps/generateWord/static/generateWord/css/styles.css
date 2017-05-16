@@ -1,0 +1,18 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+#wordResults {
+	border: 2px solid #000;
+	width: 350px;
+	height: 85px;
+}
+.btn-style {
+	display: inline-block;
+	vertical-align: middle;	
+}
+p {
+	font-size: 3em;
+	padding: 10px 25px;
+	color: #EE5E00;
+}

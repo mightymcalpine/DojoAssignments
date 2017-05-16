@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title>Word Generator</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="{% static 'generateWord/css/styles.css' %}">
+	</head>
+	<body>
+		<h1>Random Word Generator</h1>
+		<h3>Attempt no. {{request.session.attempt}}</h3>
+		<div id="wordResults">
+			<p>{{word}}</p>
+		</div>
+		<div>
+			<!-- generate and reset buttons -->
+			<form action="/" method="get" class="btn-style">
+				<button type="submit">Generate Word</button>
+			</form>
+			<form action="/reset", method="get" class="btn-style">
+				<button type="submit">Reset</button>
+			</form>
+		</div>
+	</body>
+</html>

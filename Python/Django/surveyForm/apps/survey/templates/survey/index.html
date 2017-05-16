@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title>Survey Form</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<!-- Bootstrap  -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Latest compiled and minified jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:500" rel="stylesheet">
+		<!-- main styles -->
+		<link rel="stylesheet" href="{% static 'survey/css/styles.css' %}">
+	</head>
+	<body>
+		<main class="container">
+			<section class="row">
+				<div class="col-lg-5 col-md-6 col-sm-8 col-lg-offset-3">		
+				<h1 class="push-down">Coding Dojo Survey*</h1>				
+					<form action="/surveyData" method="post">
+					{% csrf_token %}
+						<div class="form-group">
+							<label for="user_name">Your Name:</label>
+							<input id="user_name" type="text" class="form-control push-down" name="name">
+						</div>
+						<div>
+							<label for="location">Dojo Location:</label>
+							<select id="location" class="form-control push-down" name="location">
+							  <option></option>
+							  <option>Seattle</option>
+							  <option>Chicago</option>
+							  <option>Dallas</option>
+							  <option>Silicon Valley</option>
+							  <option>Washington DC</option>
+							  <option>Los Angeles</option>
+							</select>
+						</div>
+						<div>
+							<label for="language">Favorite Language:</label>
+							<select id="language" class="form-control push-down" name="language">
+							  <option></option>
+							  <option>Python</option>
+							  <option>C++</option>
+							  <option>Ruby</option>
+							  <option>JavaScript</option>
+							  <option>Swift</option>
+							  <option>PHP</option>
+							  <option>Java</option>
+							</select>
+						</div>
+						<div>
+							<label id="comments">Comments (optional):</label>
+							<textarea id="comments" class="form-control push-down" rows="3" name="comments" placeholder="Limit 120 characters"></textarea>
+						</div>					
+						<button id="button" class="btn btn-success btn-md push-down" type="submit">Submit</button>
+					</form>
+					<br>
+					<h6><em>*Now with even more Django!</em></h6>				
+				</div>				
+			</section>
+		</main>
+	</body>
+</html>
