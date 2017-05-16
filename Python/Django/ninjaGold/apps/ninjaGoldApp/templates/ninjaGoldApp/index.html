@@ -11,8 +11,7 @@
 		<div id="wrapper">
 			<div>
 				<p class="header pushright">Your Gold</p>
-				<p class="header" id="goldtotal">###</p>
-				<!-- request.session gold -->
+				<p class="header" id="goldtotal">{{request.session.gold}}</p>
 				<form action="/reset" method="get" class="header">
 					<button type="submit" name="reset" id="reset-btn" class="btn-style">Clear</button>
 				</form>
@@ -22,6 +21,7 @@
 				<h3>Farm</h3>
 				<p>(earn 10-20 golds)</p>
 				<form action="/processGold" method="post">
+					{% csrf_token %}
 					<input type="hidden" name="building" value="farm">
 					<button type="submit" class="btn-style">Find Gold!</button>
 				</form>
@@ -31,6 +31,7 @@
 				<h3>Cave</h3>
 				<p>(earn 5-10 golds)</p>
 				<form action="/processGold" method="post">
+					{% csrf_token %}
 					<input type="hidden" name="building" value="cave">
 					<button type="submit" class="btn-style">Find Gold!</button>
 				</form>
@@ -40,6 +41,7 @@
 				<h3>House</h3>
 				<p>(earn 2-5 golds)</p>
 				<form action="/processGold" method="post">
+					{% csrf_token %}
 					<input type="hidden" name="building" value="house">
 					<button type="submit" class="btn-style">Find Gold!</button>
 				</form>
@@ -49,6 +51,7 @@
 				<h3>Casino</h3>
 				<p>(earns/takes 0-50 golds)</p>
 				<form action="/processGold" method="post">
+					{% csrf_token %}
 					<input type="hidden" name="building" value="casino">
 					<button type="submit" class="btn-style">Find Gold!</button>
 				</form>
@@ -56,18 +59,16 @@
 			<!-- ACTIVITY -->
 			<p class="pushright">Activities</p>
 			<div id="activityBox">
-			
 			{% if messages %}
-			<!-- optional container -->
 				{% for msg in messages %}
-					{{msg}}
+					<p class="fail-msg">{{ msg }}</p>
 				{% endfor %}
 			{% endif %}
-			<!-- 
-			
-				activity log/messages 
-			
-			-->
+			{% autoescape off %}
+			{% for msg in request.session.gameActivity %}
+				<p>{{ msg }}</p>
+			{% endfor %}
+			{% endautoescape %}
 			</div>
 		</div>
 	</body>
