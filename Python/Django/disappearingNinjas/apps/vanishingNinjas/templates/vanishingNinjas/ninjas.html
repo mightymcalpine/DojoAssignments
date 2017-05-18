@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title>ninjas</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="{% static 'vanishingNinjas/css/ninjaStyles.css' %}">
+	</head>
+	<body>
+		<main>
+		<section>
+			{% if all %}
+				<h1>Teenage Mutant Ninja Turtles</h1>
+				<img src="{% static leo %}" alt="leonardo">
+				<img src="{% static donny %}" alt="donatello">
+				<img src="{% static raf %}" alt="raphael">
+				<img src="{% static mike %}" alt="michelangelo">
+		</section>
+		<section>
+			{% elif color == 'blue' %}
+				<img src="{% static leo %}" alt="leonardo">
+			{% elif color == 'purple' %}
+				<img src="{% static donny %}" alt="donatello">
+			{% elif color == 'red' %}
+				<img src="{% static raf %}" alt="raphael">
+			{% elif color == 'orange' %}
+				<img src="{% static mike %}" alt="michelangelo">
+			{% else %}
+				<img src="{% static april %}" alt="april" id="april-img">
+			{% endif %}
+		</section>
+		</main>
+	</body>
+</html>

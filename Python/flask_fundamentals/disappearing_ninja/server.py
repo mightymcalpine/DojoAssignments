@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import flash
 from flask import redirect
-from flask import render_template
+from flask import render_template	s
 from flask import request
 from flask import session
 

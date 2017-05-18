@@ -1,0 +1,24 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+main {
+	margin: 0 auto;
+}
+h1 {
+	color: #008301;
+	text-align: center;
+	font-size: 3em;
+	padding-top: 20px;
+	margin-bottom: 25px;
+}
+img {
+	width: 200px;
+	height: 200px;
+	margin: 25px;
+	display: inline-block;
+}
+#april-img {
+	width: 200px;
+	height: auto;
+}
