@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title>Surprise</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="{% static 'surprise/styles.css' %}">
+	</head>
+	<body>
+		<h1>How many things do you want to see?</h1>
+		<form action="/results" method="post">
+			{% csrf_token %}
+			<label for="number">Pick a Number</label>
+			<input type="number" name="number" id="number">
+			<button type="submit">Go For It</button>
+		</form>
+		{% if messages %}
+			{% for msg in messages %}
+				<p class="red">{{ msg }}</p>
+			{% endfor %}
+		{% endif %}
+	</body>
+</html>

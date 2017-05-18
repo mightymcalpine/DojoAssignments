@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="#">
+	</head>
+	<body>
+		<h1>All the things</h1>
+		<ol>
+		{% for item in newList %}
+			<li>{{item}}</li>
+		{% endfor %}
+		</ol>
+	</body>
+</html>
