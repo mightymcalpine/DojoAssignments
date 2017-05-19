@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title>Landscapes</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="{% static 'landscapes/css/styles.css' %}">
+	</head>
+	<body>
+		<h1>Voilà</h1>
+		<form action="/" method="get">
+			<button type="submit" class="btn-style">Back</button>
+		</form>
+		{% if num %}
+			<img src="{% static img %}" alt="">
+		{% endif %}		
+	</body>
+</html>

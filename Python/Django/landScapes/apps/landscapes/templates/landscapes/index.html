@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title>Landscapes</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<link rel="stylesheet" href="{% static 'landscapes/css/styles.css' %}">
+	</head>
+	<body>
+		<h1>Hey there!</h1>
+		<p>Go up the URL bar and add any number between 1-50,<br>like this: "/21", and we'll show you a beautiful landscap image.</p>
+		{% if messages %}
+			{% for msg in messages %}
+				<p class="red">{{ msg }}</p>
+			{% endfor %}
+		{% endif %}
+	</body>
+</html>

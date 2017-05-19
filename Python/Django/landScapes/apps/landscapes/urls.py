@@ -3,5 +3,5 @@ from django.conf.urls import url
 
 urlpatterns = [
 	url(r'^$', views.index),
-	url(r'^ninja/(?P<color>\w*)$', views.ninjaColor),
+	url(r'^(?P<num>\d+)$', views.landscapes)
 ]
