@@ -10,7 +10,11 @@ def index(request):
 	book3 = Books.objects.create(title = 'Lost in Space', author = 'Bill Guymore', published_date = 'October 22, 1923', category = 'fiction', in_print = False)
 	book4 = Books.objects.create(title = 'My Life', author = 'Bill Clinton', published_date = 'June 8, 1999', category = 'memoir', in_print = True)
 	book5 = Books.objects.create(title = '1984', author = 'George Orwell', published_date = 'July 12, 1946', category = 'dystopian', in_print = True)
+	book6 = Books.objects.create(title = 'Winning at all costs', author = 'Barty Brownstone', published_date = 'August 19, 2007', category = 'non-fiction', in_print = True)
+	book7 = Books.objects.create(title = 'The Art of Winning', author = 'Guy Winski', published_date = 'October 6, 2012', category = 'non-fiction', in_print = True)
 	allBooks = Books.objects.all()
 	for book in allBooks:
 		print 'ID:', book.id, '\nTitle:', book.title, '\nAuthor:', book.author, '\nDate Published:', book.published_date, '\nCategory:', book.category, '\nCirculation:', book.in_print
 	return render(request, 'booksApp/index.html')
+	
+	
