@@ -1,0 +1,20 @@
+h1 {
+	color: #004D9E;
+	font-size: 4em;
+	text-align: center;
+	margin-bottom: 35px;
+}
+h2 {
+	color: #D1267D;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.form-title {
+	margin-bottom: 35px;
+}
+.btn-style {
+	margin-top: 20px;	
+}
+a {
+	color: #E20000;
+}
