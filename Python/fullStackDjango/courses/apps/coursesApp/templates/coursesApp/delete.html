@@ -23,25 +23,15 @@
 	<body>
 		<div class="container">
 			<section class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-8">
 					<h1>Are you sure you want to delete the following course?</h1>
-					<table>
-						<tbody>
-							<tr>
-								<td>Name:</td>
-								<td>{{courses.course}}</td>
-							</tr>
-							<tr>
-								<td>Description</td>
-								<td>{{courses.description}}</td>
-							</tr>
-						</tbody>
-					</table>
+					<p><strong>Name:</strong> {{courses.course}}</p>
+					<p><strong>Description:</strong> {{courses.description}}</p>
 					<form action="{% url 'coursesApp:delete' courses.id %}" method="post">
 						{% csrf_token %}
 						<section class="form-group">
-							<button type="submit" name="no" class="btn btn-sm btn-default">No, go back</button>
-							<button type="submit" name="yes" class="btn btn-sm btn-danger">Yes, delete</button>
+							<button type="submit" name="delete" value="no" class="btn btn-sm btn-default del-btn">No, go back</button>
+							<button type="submit" name="delete" value="yes" class="btn btn-sm btn-danger del-btn">Yes, delete</button>
 						</section>
 					</form>
 				</div>

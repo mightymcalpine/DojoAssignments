@@ -17,7 +17,6 @@ def addCourse(request):
 	return redirect('/')
 
 def checkDelete(request, id):
-	# 
 	context = {
 		'courses': CoursesDB.objects.get(id = id),
 	}
@@ -25,9 +24,9 @@ def checkDelete(request, id):
 
 def delete(request, id):
 	if request.method == 'POST':
-		if request.POST == 'yes':
-			CoursesDB.objects.filter(id = id).delete()
+		if request.POST['delete'] == 'yes':
+			CoursesDB.objects.get(id = id).delete()
 			return redirect('/')
-		else:
+		elif request.POST['delete'] == 'no':
 			return redirect('/')
 	
