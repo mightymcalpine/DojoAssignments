@@ -1,0 +1,15 @@
+h1 {
+	margin-bottom: 25px;
+	color: #0054AF;
+	font-weight: 600;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.65em;
+}
+.sub-btn {
+	margin-left: 31px;
+}
+.form-style {
+	margin-bottom: 20px;
+}
