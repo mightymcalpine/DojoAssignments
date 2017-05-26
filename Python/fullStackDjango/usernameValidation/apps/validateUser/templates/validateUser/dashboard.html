@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- jQuery compiled and minified v3.2.1 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<!-- Main styles -->
+		<link rel="stylesheet" href="{% static 'validateUser/css/styles.css' %}">
+	</head>
+	<body>
+		<div class="container">
+			<section class="row">
+				<div class="col-lg-7">
+					<h1>Hello World!</h1>
+					{% if messages %}
+						{% for message in messages %}
+							<p>{{ message }}</p>
+						{% endfor %}
+					{% endif %}
+					
+					{% if 'id' in request.session %}
+						<h2>Are you sure you want to delete?</h2>
+						<!-- pull username from controller into h2 ^ -->
+						<p>{{request.session.username}}</p>
+						<form action="{% url 'validateUser:delete' request.session.id %}" method="post">
+						{% csrf_token %}
+							<section class="form-group">
+								<button type="submit" name="delete" value="no" class="btn btn-sm btn-default del-btn">No, go back</button>
+								<button type="submit" name="delete" value="yes" class="btn btn-sm btn-danger del-btn">Yes, delete</button>
+							</section>
+						</form>
+					{% endif %}
+					<table class="table table-striped">
+						<thead>
+							<th>Username</th>
+							<th>Date</th>
+							<th>Time</th>
+							<th>Remove</th>
+						</thead>
+						<tbody>
+							{% for user in users %}
+							<tr>
+								<td>{{ user.username }}</td>
+								<td>{{ user.createdDate }}</td>
+								<td>{{ user.createdTime }}</td>
+								<td><a href="{% url 'validateUser:confirmDelete' user.id %}">Delete</a></td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
