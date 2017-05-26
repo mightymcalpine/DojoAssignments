@@ -29,16 +29,38 @@ def addUser(request):
 	return redirect('validateUser:index')
 
 def dashBoard(request):
-	# request.session.clear()
 	context = {
 		'users': UserDB.objects.all()
 	}
 	return render(request, 'validateUser/dashBoard.html', context)
+	
+# ***** ORIGINAL CODE *****
+# def confirmDelete(request, id):
+# 	# get whole object of passed in id
+# 	request.session['id'] = id
+# 	return redirect('validateUser:dashBoard')
 
+# ********* TESTING AREA ***************
+# OPTION-1
+# def confirmDelete(request, id):
+# 	context = {
+# 		'bacon': UserDB.objects.filter(id=id)
+# 	}
+# 	print 'HERE ', context['bacon']
+# 	request.session['id'] = id
+# 	return render(request, 'validateUser/dashBoard.html', context)
+
+# OPTION-2
 def confirmDelete(request, id):
-	# get username object of this.id
+	# get whole object of passed in id
 	request.session['id'] = id
+	request.session['username'] = UserDB.objects.filter(id=id)
+	
 	return redirect('validateUser:dashBoard')
+
+# ********* TESTING AREA ***************
+
+
 
 def delete(request, id):
 	if request.method == 'POST':
