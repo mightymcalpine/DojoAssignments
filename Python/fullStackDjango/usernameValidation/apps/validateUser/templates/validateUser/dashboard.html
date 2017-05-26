@@ -22,29 +22,28 @@
 		<div class="container">
 			<section class="row">
 				<div class="col-lg-7">
-					<h1>Hello World!</h1>
+					<h1>Registered Users:</h1>
+					<!-- flash success message -->
 					{% if messages %}
 						{% for message in messages %}
-							<p>{{ message }}</p>
+							<h4 class="success">{{ message }}</h4>
 						{% endfor %}
 					{% endif %}
-					
+					<!-- flash delete confirmation -->
 					{% if 'id' in request.session %}
-						<h2>Are you sure you want to delete?</h2>
-						<!-- pull username from controller into h2 ^ -->
-						<p>{{request.session.username}}</p>
+						<h4>Are you sure you want to delete <span class="error">{{thisUser.username}}</span>?</h4>
 						<form action="{% url 'validateUser:delete' request.session.id %}" method="post">
 						{% csrf_token %}
 							<section class="form-group">
-								<button type="submit" name="delete" value="no" class="btn btn-sm btn-default del-btn">No, go back</button>
-								<button type="submit" name="delete" value="yes" class="btn btn-sm btn-danger del-btn">Yes, delete</button>
+								<button type="submit" name="delete" value="no" class="btn btn-xs btn-default btn-pad">No, go back</button>
+								<button type="submit" name="delete" value="yes" class="btn btn-xs btn-danger btn-pad">Yes, delete</button>
 							</section>
 						</form>
 					{% endif %}
 					<table class="table table-striped">
 						<thead>
 							<th>Username</th>
-							<th>Date</th>
+							<th>Date Created</th>
 							<th>Time</th>
 							<th>Remove</th>
 						</thead>

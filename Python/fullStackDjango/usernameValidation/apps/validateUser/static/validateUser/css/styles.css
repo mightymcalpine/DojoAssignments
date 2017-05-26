@@ -2,7 +2,7 @@ h1 {
 	color: #970000;
 	font-family: 'Righteous', cursive;
 	font-size: 2.75em;
-	margin: 65px 0 20px 0;
+	margin: 65px 0 30px 0;
 	letter-spacing: 0.01em;
 }
 #userLabel {
@@ -12,6 +12,12 @@ h1 {
 #sub-btn {
 	margin: 15px 0 0 9px;
 }
-#red {
+.error {
 	color: #BD0003;
+}
+.success {
+	color: #159E18;
+}
+.btn-pad {
+	margin-bottom: 15px;
 }

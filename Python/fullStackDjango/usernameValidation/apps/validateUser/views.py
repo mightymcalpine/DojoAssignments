@@ -21,7 +21,7 @@ def addUser(request):
 				messages.error(request, message[1])
 			return redirect('validateUser:index')
 		else:
-			# could place user in session
+			# could place user in session here
 			messages.success(request, 'The username you entered ' + response[1].username + ' is valid. Thank You.')
 			# confirm good user go here
 			return redirect('validateUser:dashBoard')
@@ -29,45 +29,30 @@ def addUser(request):
 	return redirect('validateUser:index')
 
 def dashBoard(request):
+	# query all users for displaying in template
 	context = {
 		'users': UserDB.objects.all()
 	}
 	return render(request, 'validateUser/dashBoard.html', context)
-	
-# ***** ORIGINAL CODE *****
-# def confirmDelete(request, id):
-# 	# get whole object of passed in id
-# 	request.session['id'] = id
-# 	return redirect('validateUser:dashBoard')
 
-# ********* TESTING AREA ***************
-# OPTION-1
-# def confirmDelete(request, id):
-# 	context = {
-# 		'bacon': UserDB.objects.filter(id=id)
-# 	}
-# 	print 'HERE ', context['bacon']
-# 	request.session['id'] = id
-# 	return render(request, 'validateUser/dashBoard.html', context)
-
-# OPTION-2
 def confirmDelete(request, id):
-	# get whole object of passed in id
+	# place specified id in session
 	request.session['id'] = id
-	request.session['username'] = UserDB.objects.filter(id=id)
-	
-	return redirect('validateUser:dashBoard')
-
-# ********* TESTING AREA ***************
-
-
+	# query for all users for diplay and user of specified id
+	context = {
+		'users': UserDB.objects.all(),
+		'thisUser': UserDB.objects.filter(id=id).get(id=id)
+	}
+	return render(request, 'validateUser/dashBoard.html', context)
 
 def delete(request, id):
 	if request.method == 'POST':
+		# clicked yes delete button, delete user, clear session
 		if request.POST['delete'] == 'yes':
 			UserDB.objects.get(id=id).delete()
 			request.session.clear()
 			return redirect('validateUser:dashBoard')
+		# clicked button to not delete, clear session, redirect 
 		elif request.POST['delete'] == 'no':
 			request.session.clear()
 			return redirect('validateUser:dashBoard')

@@ -2,8 +2,8 @@
 from __future__ import unicode_literals
 from django.db import models
 import re
-
-USERREG = re.compile(r'^[a-z0-9_-]\S{8,16}$')
+# regex capture for username
+USERREG = re.compile(r'^[a-zA-Z0-9_-]\S{8,16}$')
 
 class UserDBChief(models.Manager):
 	def validateCreate(self, postData):
@@ -43,5 +43,3 @@ class UserDB(models.Model):
 	# method for viewing object from DB
 	def __str__(self):
 		return 'ID: %s | Username: %s | Date: %s | Time: %s' % (self.id, self.username, self.createdDate, self.createdTime)
-
-
