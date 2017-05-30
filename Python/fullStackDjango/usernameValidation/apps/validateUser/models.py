@@ -33,6 +33,7 @@ class UserDBChief(models.Manager):
 		 	# send list back to controller which has our newUser
 		 	return [True, newUser]
 
+
 class UserDB(models.Model):
 	username = models.CharField(max_length = 64)
 	createdDate = models.DateField(auto_now_add = True)
