@@ -8,7 +8,6 @@ emailREG = re.compile(r'^[a-zA-Z0-9.+-_]+@[a-zA-Z0-9._-]+\.[a-zA-Z]*$')
 pwREG = re.compile(r'^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{7,})\S$')
 
 
-
 class UserDBChief(models.Manager):
 	def encrpytPW(self, password):
 		return bcrypt.hashpw(password, bcrypt.gensalt())

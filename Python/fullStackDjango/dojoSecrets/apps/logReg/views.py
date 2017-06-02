@@ -26,15 +26,7 @@ def process(request):
 			return redirect('secrets:home')
 	return redirect('logReg:index')
 
-# def success(request):
-# 	if 'user' not in request.session:
-# 		return redirect('logReg:index')
-# 	context = {
-# 		'users': UserDB.objects.all()
-# 	}	
-# 	return redirect('secrets:index')
-
 def logout(request):
 	if request.method == 'GET':
 		request.session.clear()
-		return redirect('logReg:index')
+		return redirect('logReg:index')  

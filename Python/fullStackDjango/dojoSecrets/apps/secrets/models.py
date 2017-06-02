@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 from django.db import models
 from django.db.models import Count
 from ..logReg.models import UserDB
@@ -17,12 +16,7 @@ class SecretDBChief(models.Manager):
 			return [False, errors]
 		else:
 			newSecret = SecretDB.objects.create(secret = postData['newSecret'], author = currentUser)
-			# ****** CHECK DATA SECTION *******
-			print '*'*50
-			print 'new object created on HERE', newSecret			
-			print '*'*50
-			# ****** END CHECK *******
-			newSecret.save()
+			# newSecret.save()
 			return [True, newSecret]
 
 # Secrets DB
@@ -31,10 +25,8 @@ class SecretDB(models.Model):
 	author = models.ForeignKey(UserDB, related_name="authorSecret", on_delete=models.CASCADE)
 	createdAt = models.DateTimeField(auto_now_add = True)
 	updatedAt = models.DateTimeField(auto_now = True)
-	
-	# def likeCount(self):
-	# 	return LikeDB.objects.filter(secretLike=self).count()
-	
+	def getLikeAuthor(self):
+		return UserDB.objects.filter(authorLike__secret=self)
 	objects = SecretDBChief()
 	
 	def __str__(self):
@@ -46,9 +38,6 @@ class LikeDBChief(models.Manager):
 		# create newLike with author and specified secret
 		newLike = LikeDB.objects.create(author = authorID, secret = secretID)
 		# return newLike
-		return LikeDB.objects.filter(id=authorID)
-	def getLikeAuthor(self, id):
-		return LikeDB.objects.filter(secret__author__id=id)
 		
 
 # Likes DB

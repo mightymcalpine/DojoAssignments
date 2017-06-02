@@ -17,6 +17,9 @@ label, button {
 	font-family: 'Amatic SC', cursive;
 	font-size: 1.65em;
 }
-.error {
-	color: #BD0003;
+#heart {
+	color: #D50001;
+}
+.red {
+	color: #BF0207;
 }

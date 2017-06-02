@@ -7,7 +7,6 @@ urlpatterns = [
 	url(r'^home$', views.home, name="home"),
 	url(r'^newSecret$', views.newSecret, name="newSecret"),
 	url(r'^popular$', views.popular, name="popular"),
-	url(r'^logout$', views.logout, name="logout"),
-	url(r'^delete/(?P<id>\d+)$', views.delete, name="delete"),
-	url(r'^like/(?P<id>\d+)$', views.like, name="like"),
+	url(r'^delete/(?P<page>\w+)*/(?P<id>\d+)$', views.delete, name="delete"),
+	url(r'^like/(?P<page>\w+)*/(?P<id>\d+)$', views.like, name="like"),
 ]
