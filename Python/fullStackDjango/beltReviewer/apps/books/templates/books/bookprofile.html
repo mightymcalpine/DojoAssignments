@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load staticfiles %}
+		<title>Login or Register</title>
+		<meta charset="utf-8">
+		<meta name="#" content="#">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- jQuery compiled and minified v3.2.1 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Fonts -->
+		
+		<!-- Main styles -->
+		<link rel="stylesheet" href="{% static 'books/css/styles.css' %}">
+	</head>
+	<body>
+		<div class="container">
+			<section class="row">
+				<div class="col-lg-8">
+					<h2>{{ book.title }}</h2>
+					<h3>{{ book.author.name }}</h3>
+					<a href="{% url 'books:home' %}">Home</a>
+					<a href="{% url 'users:index' %}">Logout</a>
+				</div>
+			</section>
+			<section class="row">
+				<!-- reviews of current book -->
+				<div class="col-md-7">
+					{% for review in allReviews %}
+						<p>rating: 
+						{% for star in review.rating %}
+						<span>*</span>
+						{% endfor %}
+						</p>
+						<p><a href="{% url 'books:userProfile' review.user.id %}">{{ review.user.firstName }}</a> writes: {{ review.review }}</p>
+						<p>Posted on {{ review.createAt }}
+						{% if request.session.user.id == review.user.id %}
+						<a href="{% url 'books:delete' review.id %}">Delete</a></p>
+						{% endif %}
+					{% endfor %}
+				</div>
+				<!-- right a review -->
+				<div class="col-md-5">
+				<!-- check book ID -->
+				<!-- check if user has already reviewed -->
+				<!-- line 54 is broke -->
+				<form action="{% url 'books:addReview' book.id %}" method="post" class="form-horizontal">
+					{% csrf_token %}
+					<section class="form-group">
+							<label class="col-sm-4 control-label">Write Your Review:</label>
+							<div class="col-sm-8">								
+								<textarea name="review" class="form-control" cols="4" placeholder="Your Review"></textarea>		
+							</div>
+						</section>
+						<section class="form-group">
+						<label class="col-sm-4 control-label">Rating:</label>
+							<div class="col-sm-3">
+								<input type="number" name="stars" min="1" max="5"> Stars
+							</div>
+						</section>
+						<section class="form-group">
+							<div class="col-sm-offset-4">
+								<button type="submit" class="btn btn-sm btn-success">Submit Review</button>		
+							</div>
+						</section>
+					</form>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

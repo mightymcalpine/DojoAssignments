@@ -30,3 +30,4 @@ def logout(request):
 	if request.method == 'GET':
 		request.session.clear()
 		return redirect('logReg:index')  
+		
